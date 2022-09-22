@@ -1,0 +1,85 @@
+@media screen and (max-width:991px) {
+    /*MOBILE MENU nav-menu Styling */
+    .navbar-area {
+        display: block;
+        padding-left: 0rem;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 9999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: absolute;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        left: -108%;
+        top: 100%;
+        padding-top: 4rem;
+        background: rgba(236, 238, 243, 0.8);
+        transition: 0.5s ease-in;
+        -webkit-transition: 0.5s ease-in;
+        -moz-transition: 0.5s ease-in;
+        -ms-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+        z-index: 999;
+    }
+    .navbar .menu .menu-item a {
+        color: #000;
+    }
+    .nav-left-side-menu .menu .menu-item {
+        display: block;
+        border-top: 1px solid #000;
+    }
+    .navbar .menu.active {
+        left: 0;
+        padding-top: 18px;
+    }
+    .navbar ul.menu li.menu-item {
+        display: block;
+    }
+    .navbar ul.menu li.menu-item a,
+    .navbar ul.menu li.menu-item a.item {
+        padding: 10px 0;
+        border-bottom: 1px solid;
+        padding: 1rem 0;
+        display: block;
+    }
+    .navbar ul.menu li.menu-item a.item {
+        padding: 1rem;
+    }
+    .navbar ul.menu li.menu-item a.menu-link:hover {
+        background: #1465ea;
+        color: #fff;
+    }
+    .header-content h1 {
+        font-size: 3rem;
+    }
+    .international_program-area .content {
+        flex-basis: 70%;
+        margin: 0 auto;
+        margin-bottom: 8rem;
+    }
+    .team-content .team-img img {
+        width: 200px;
+    }
+    .footer_section_part {
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .top_header_menu_section .item {
+        width: 100%;
+        text-align: center;
+    }
+    .top_header_menu_section .item:nth-last-child(1) {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,70 @@
+    @media screen and (max-width:991px) {
+        .navbar_area {
+            display: block;
+            padding-top: 0rem;
+            position: relative;
+        }
+        .navbar {
+            justify-content: space-between;
+            padding-top: 2rem;
+        }
+        /*MOBILE MENU nav-menu Styling */
+        .menu-btn {
+            display: block;
+            color: #fff;
+        }
+        .menu-btn i.active:before {
+            content: "\f00d";
+        }
+        .nav_item {
+            position: absolute;
+            display: block;
+            height: 100vh;
+            width: 100%;
+            left: -108%;
+            top: 72px;
+            padding-top: 4rem;
+            background: #01B0AE;
+            transition: 0.5s ease-in;
+            -webkit-transition: 0.5s ease-in;
+            -moz-transition: 0.5s ease-in;
+            -ms-transition: 0.5s ease-in;
+            -o-transition: 0.5s ease-in;
+        }
+        .nav_item.active {
+            left: 0;
+        }
+        .navbar .menu .menu-item {
+            display: block;
+        }
+        .nav_item .menu .menu-item .sub-item {
+            padding: 1rem 25px;
+            display: block;
+        }
+        .flexible {
+            display: block;
+        }
+        .flexible_item {
+            margin-bottom: 4rem;
+        }
+        .about_section {
+            padding: 0 2rem;
+        }
+    }
+    
+    @media screen and (max-width:810px) {
+        .footer_section {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .footer_section .item {
+            border-bottom: 2px dotted;
+            padding: 1rem 0;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        .certification {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }

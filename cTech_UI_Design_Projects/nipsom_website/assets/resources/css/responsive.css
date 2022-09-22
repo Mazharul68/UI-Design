@@ -1,0 +1,216 @@
+@media screen and (max-width:1400px) {
+    .header-content p {
+        color: #fff;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .logo img {
+        margin-top: 5px;
+    }
+    .navbar-area .logo {
+        padding-left: 2rem;
+    }
+    .header-video {
+        margin-top: -137px;
+    }
+    .navbar-area {
+        display: block;
+        padding-top: 0rem;
+    }
+    /*MOBILE MENU nav-menu Styling */
+    .menu-btn {
+        display: block;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: absolute;
+        display: inline-block;
+        /* height: 1000px; */
+        /* width: 100%; */
+        left: -108%;
+        top: -87px;
+        padding-top: 4rem;
+        background: rgb(6, 80, 230, 0.9);
+        transition: 0.5s ease-in;
+        -webkit-transition: 0.5s ease-in;
+        -moz-transition: 0.5s ease-in;
+        -ms-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+    }
+    .navbar .menu .menu-item a {
+        color: #000;
+    }
+    .nav-left-side-menu .menu .menu-item {
+        display: block;
+        border-top: 1px solid #000;
+    }
+    .navbar .menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+    .navbar ul.menu li.menu-item {
+        display: block;
+    }
+    .navbar ul.menu li.menu-item a,
+    .navbar ul.menu li.menu-item a.item {
+        padding: 10px 0;
+        border-bottom: 1px solid;
+        padding: 1rem 0;
+        display: block;
+    }
+    .navbar ul.menu li.menu-item a.item {
+        padding: 1rem;
+    }
+    .navbar ul.menu li.menu-item a.menu-link:hover {
+        background: #1465ea;
+        color: #fff;
+    }
+    .header-content {
+        top: 137px;
+    }
+    .navbar .menu .sub-menu {
+        top: 0;
+        left: 100%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header-content h1 {
+        font-size: 3rem;
+    }
+    .department-section .department-item {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .navbar .menu .sub-sub-menu {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .department-item-area {
+        flex-basis: 95%;
+    }
+    .department-item-left-side {
+        flex-basis: 95%;
+    }
+    .adminstration-heading {
+        bottom: 0;
+    }
+    .administration-section .img img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .department-section .department-item {
+        flex-basis: 95%;
+    }
+    .about_section {
+        margin: 20px 14px;
+    }
+    .faculty-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header-content {
+        top: 93px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .navbar .menu .sub-sub-menu {
+        width: 100%;
+    }
+    .header-video {
+        position: relative;
+        margin-top: -128px;
+        height: 100%;
+        display: inline-table;
+    }
+    .header-video video {
+        margin-top: -100px;
+        z-index: -1;
+        max-width: 800px;
+    }
+    .faculty-item-left-side {
+        flex-basis: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+    .faculty-item-right-side {
+        flex-basis: 40%;
+    }
+    .faculty-content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-content h1 {
+        font-size: 18px;
+        margin-top: 4rem;
+    }
+    /* about Section */
+    .about_body_content {
+        margin: 0px;
+    }
+    .about_body_content ul li {
+        padding-left: 10;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .navbar .menu .sub-sub-menu {
+        top: 100%;
+        left: 50%;
+    }
+    .administration-section {
+        width: 95%;
+    }
+    .faculty-profile-details .faculty-img {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .faculty-profile-details {
+        flex-basis: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .navbar .menu .sub-menu {
+        width: max-content;
+    }
+    .navbar .menu .sub-sub-menu {
+        top: 100%;
+        left: 50%;
+        max-width: max-content;
+    }
+    .about_body_content {
+        margin: 0px;
+    }
+    .about_body_content ul li {
+        padding-left: 10;
+    }
+    .faculty-item-left-side {
+        flex-basis: 48%;
+        margin: 0 auto;
+        display: block;
+    }
+    .faculty-item-right-side {
+        flex-basis: 48%;
+    }
+}

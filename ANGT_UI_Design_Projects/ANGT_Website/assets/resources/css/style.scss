@@ -1,0 +1,47 @@
+
+ /* Common CSS Start*/
+ * {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: #666666;
+    text-rendering: optimizeLegibility;
+    /* scroll-behavior: smooth; */
+    background: red;
+    
+   }
+  
+  html {
+    font-size: 62.5%;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  
+  }
+ 
+  
+  ul li {
+    list-style: none; }
+  
+  a {
+    text-decoration: none;
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul {
+    margin: 0;
+    padding: 0; }
+
+ /* Common CSS End*/

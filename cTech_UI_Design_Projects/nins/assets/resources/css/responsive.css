@@ -1,0 +1,128 @@
+
+@media screen and (max-width:1200px){
+  .logo-banner{
+    left: 2rem;
+}
+} 
+@media screen and (max-width:1000px) {
+  header.top-banner-image img{
+    max-width: unset;
+    height: 150px;
+  }
+  .news-item {
+    flex-basis: 48%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:991px) {
+  /*MOBILE MENU nav-menu Styling */
+  .menu-btn{
+   display: block;
+   z-index: 9999;
+}
+.nav-menu{
+ background-image: linear-gradient(to top, #1465ea, #3484c3);
+   padding: 1rem 0;
+   display: block;
+   position: relative;
+}
+.menu-btn i.active:before{
+   content: "\f00d";
+ }
+.nav-menu .menu{
+   position: absolute;
+   display: block;
+   height: 100vh;
+   width: 100%;
+   left: -108%;
+   top: 100%;
+   padding-top: 5rem;
+   background: #fff;
+   transition: 0.5s ease-in;
+   -webkit-transition: 0.5s ease-in;
+   -moz-transition: 0.5s ease-in;
+   -ms-transition: 0.5s ease-in;
+   -o-transition: 0.5s ease-in;
+   z-index: 999;
+}
+.nav-menu .menu .menu-item a{
+ color: #000;
+}
+.nav-left-side-menu .menu .menu-item {
+ display:block;
+ border-top: 1px solid #000;
+}
+.nav-left-side-menu .menu .menu-item:last-child {
+ border-bottom: 1px solid #000;
+}
+.nav-menu .menu.active{
+   left: 0px;
+   padding-top: 0rem;
+}
+ .nav-menu ul.menu li.menu-item a.menu-link:hover{
+   background: #1465ea;
+   color: #fff;
+ }
+}
+@media screen and (max-width:850px){
+  #slider-owl-carousel{
+    width: 100%;
+  }
+   /* President Right Side Area */
+   .panel-heading-right-side{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .gallery_wise_photo .gallery_wise_item {
+    flex-basis: 47%;
+  }
+} 
+@media screen and (max-width:750px) {
+  header.top-banner-image img{
+    max-width: 100%;
+  }
+  .logo-banner img{
+    max-width: 100%;
+    padding: 15px;
+  }
+  .footer-content{
+    flex-basis: 100%;
+    margin-top: 1rem;
+  }
+  .news-item {
+    flex-basis: 100%;
+  }
+} 
+@media screen and (max-width:650px) {
+  .search-box {
+    max-width: 31%;
+  }
+  .nav-right-side-menu form {
+    justify-content: start;
+  }
+  .gallery_wise_photo .gallery_wise_item {
+    flex-basis: 90%;
+  }
+}
+@media screen and (max-width:450px) {
+  .login-registration-side {
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+  }
+  .login-registration-side a {
+    font-size: 14px;
+} 
+.menu-btn {
+	right: 2.2rem;
+}
+}
+@media screen and (max-width:516px){
+} 
+
+
