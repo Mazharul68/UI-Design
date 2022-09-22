@@ -1,0 +1,417 @@
+@media screen and (max-width: 1199px) {
+    .contact-heading h1 {
+        margin-left: 0;
+    }
+    .contact-heading img {
+        margin-left: 10rem;
+    }
+    .address3 ul {
+        display: block;
+    }
+    .address3 ul li {
+        margin-bottom: 1rem;
+    }
+    .address3 button {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .video-content h1 {
+        bottom: 1rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .education-heading h1 {
+        font-size: 3.9rem;
+    }
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .video-content h1 {
+        font-size: 3.5rem;
+    }
+    .video-icon a i {
+        font-size: 4rem;
+    }
+    .video-icon a:before {
+        width: 8rem;
+        height: 8rem;
+    }
+    .video-icon a:after {
+        width: 15rem;
+        height: 15rem;
+    }
+    .video-icon a:hover:before {
+        width: 15rem;
+        height: 15rem;
+    }
+    #contact .contact-heading h1 {
+        font-size: 3rem;
+    }
+    .contact-heading img {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 14rem;
+    }
+    .contact-form {
+        background: 0 0;
+        padding: 0;
+        padding-bottom: 0;
+    }
+    .contact-form:after {
+        display: none;
+    }
+    .form-group {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .form-heading h1 {
+        color: #fff;
+    }
+    .contact-btn {
+        margin-top: 1rem;
+    }
+    #footer .present span:after {
+        display: none;
+    }
+}
+@media screen and (max-width: 930px) {
+    .address1 {
+        float: none;
+    }
+    .blog-create {
+        margin-left: 6rem;
+    }
+    .blog-create span a {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    #header-section {
+        background: url(../img/IMG_2358.JPG);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        height: 100rem;
+        position: relative;
+    }
+    .gradient-overlay {
+        top: 80%;
+        left: 0;
+    }
+    .title-info {
+        top: 1rem;
+        left: 0.5rem;
+    }
+    .title-info .web-designer h1 {
+        top: 60%;
+    }
+    .btn-button {
+        margin-top: 5rem;
+        position: relative;
+        top: 50%;
+        left: 0.5rem;
+        right: 0;
+        bottom: 0;
+    }
+    #my-portfolio-section .portfolio-img img {
+        max-width: 100%;
+    }
+    #my-video-section .heading-area h4 {
+        top: 15rem;
+    }
+    .video-content h1 {
+        font-size: 3rem;
+        bottom: 0;
+    }
+    .client-logo span:after {
+        display: none;
+    }
+    .client-heading h1 {
+        font-size: 3rem;
+    }
+    .client-logo img {
+        width: 90%;
+        height: 10rem;
+    }
+    .contact-heading h1 {
+        font-size: 4rem;
+    }
+    .contact-heading img {
+        width: 50%;
+    }
+    .form-group {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .our-btn {
+        position: absolute;
+        display: block;
+        top: 45%;
+        left: 26%;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .blog-create span a {
+        font-size: 2rem;
+    }
+    .form-heading h1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .video-content h1 {
+        font-size: 2.5rem;
+        bottom: 1rem;
+    }
+    br {
+        display: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .container {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+    .my-portfolio-header h1 {
+        font-size: 3rem;
+        width: 90%;
+    }
+    .education-heading h1 {
+        font-size: 3.4rem;
+    }
+    .heading-title h4 {
+        font-size: 2rem;
+        left: 1rem;
+    }
+    .video-content h1 {
+        font-size: 2.2rem;
+        bottom: 0;
+    }
+    br {
+        display: none;
+    }
+    .heading-title h4 {
+        top: 30%;
+    }
+    .video-icon a i {
+        font-size: 3rem;
+    }
+    .video-icon a:before {
+        width: 7rem;
+        height: 7rem;
+    }
+    .video-icon a:after {
+        width: 13rem;
+        height: 13rem;
+    }
+    .video-icon a:hover:before {
+        width: 13rem;
+        height: 13rem;
+    }
+    .heading-title h1 {
+        font-size: 3rem;
+    }
+    .heading-title h4 {
+        font-size: 2rem;
+        left: 0.5rem;
+    }
+    .blockquote p {
+        padding-left: 0;
+    }
+    .blog-btn .btn-button {
+        left: 100%;
+    }
+    .contact-heading h1 {
+        font-size: 3rem;
+    }
+    .form-heading h1 {
+        font-size: 3rem;
+    }
+    .contact-heading img {
+        margin-top: 0;
+    }
+    .contact-btn input {
+        font-size: 1.5rem;
+    }
+    .form-group {
+        width: 96%;
+    }
+    .person-name h4 {
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .web-designer h1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    #header-section {
+        background: url(../img/IMG_2358.JPG);
+        background-position: center;
+        background-size: cover;
+        }
+
+    .title-info .web-designer h1 {
+        font-size: 3.5rem;
+        top: 70%;
+    }
+    .title-info .fisrt-word {
+        font-size: 2.5rem;
+    }
+    .title-info .second-word {
+        font-size: 4rem;
+    }
+    #my-video-section .heading-area h4 {
+        top: 8rem;
+        font-size: 2rem;
+    }
+    .video-content h1 {
+        font-size: 1.8rem;
+    }
+    .heading-title h4 {
+        top: 15%;
+        font-size: 2rem;
+    }
+    .video-icon a i {
+        font-size: 2.5rem;
+    }
+    .video-icon a:before {
+        width: 5rem;
+        height: 5rem;
+    }
+    .video-icon a:after {
+        width: 10rem;
+        height: 10rem;
+    }
+    .video-icon a:hover:before {
+        width: 10rem;
+        height: 10rem;
+    }
+    .about-mission h1 {
+        font-size: 3.5rem;
+    }
+    .my-service-heading h1 {
+        font-size: 3rem;
+    }
+    .my-portfolio-header h1 {
+        font-size: 2rem;
+    }
+    .portfolio-item ul li {
+        font-size: 1.5rem;
+    }
+    .education-heading h1 {
+        font-size: 2.8rem;
+    }
+    .client-logo img {
+        width: 80%;
+        height: 6rem;
+    }
+    .blog-btn .btn-button {
+        left: 50%;
+    }
+    .slider-content h2 {
+        font-size: 3rem;
+    }
+    .blog-create span a {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 270px) {
+  #header-section {
+      background-position: center center;
+      background-size: cover;
+      }
+    .about-mission h1 {
+        font-size: 2.2rem;
+    }
+    #about-section .heading-area h4 {
+        font-size: 2rem;
+    }
+    .video-content h1 {
+        display: none;
+    }
+    .portfolio-item ul li {
+        font-size: 1rem;
+        margin-left: -0.5rem;
+    }
+    .portfolio-item ul {
+        justify-content: left;
+        display: block;
+    }
+    .education-heading h1 {
+        font-size: 2rem;
+    }
+    .my-education {
+        margin: 0;
+    }
+    .subject-info h2 {
+        font-size: 1.3rem;
+    }
+    .subject-info p {
+        font-size: 1.2rem;
+        margin-left: -3rem;
+        margin-top: 1rem;
+    }
+    .education-icon .my-icon {
+        padding-right: 1rem;
+    }
+    .comment-people img {
+        height: 20%;
+    }
+    .client-logo img {
+        width: 80%;
+        height: 6rem;
+    }
+    .client-heading h1 {
+        font-size: 2rem;
+    }
+    .heading-title h4 {
+        font-size: 2rem;
+    }
+    .btn-button a {
+        font-size: 1rem;
+    }
+    .blog-create span a {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 200px) {
+    #header-section {
+        background: url(../img/potbg.png);
+        background-position: center;
+    }
+    .header-logo img {
+        display: none;
+    }
+    .gradient-overlay .title-info h3 {
+        font-size: 1.5rem;
+    }
+    .gradient-overlay .title-info h2 {
+        font-size: 2.5rem;
+    }
+    .gradient-overlay .social-menu ul li a {
+        font-size: 1.5rem;
+    }
+    .gradient-overlay .btn-button a {
+        font-size: 1rem;
+        top: -3rem;
+    }
+    .slider-content h2 {
+        font-size: 2.5rem;
+    }
+    #my-video-section .heading-area h4 {
+        top: 1rem;
+        left: -1rem;
+        font-size: 1.5rem;
+    }
+}

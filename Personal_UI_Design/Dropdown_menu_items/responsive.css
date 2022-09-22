@@ -1,0 +1,23 @@
+@media screen and (max-width: 890px){
+    .top-bar{
+        width: 100%;
+        text-align: center;
+    }
+    .top-content {
+        display: inline-block;
+    }
+    .top-right{
+       text-align: center;
+       display: inline-block;
+       margin-top: 1rem;
+    }
+}
+@media screen and (max-width:530px){
+    .top-left ul{
+    display: inline-block;
+}
+.top-left ul li i{
+    display: block;
+    margin-top: 1rem;
+}
+}

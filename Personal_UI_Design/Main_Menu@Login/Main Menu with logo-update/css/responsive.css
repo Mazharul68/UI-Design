@@ -1,0 +1,60 @@
+@media screen and (max-width:991px) {
+    .menu_section {
+        justify-content: start;
+        padding: 1rem 4rem;
+    }
+    /*MOBILE MENU nav-menu Styling */
+    .menu-btn {
+        display: block;
+        top: 33px;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .main_menu {
+        border-top: 1px solid;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: -352px;
+        width: 100%;
+        background: #00b894;
+        transition: 0.5s ease-in;
+        -webkit-transition: 0.5s ease-in;
+        -moz-transition: 0.5s ease-in;
+        -ms-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+        z-index: -1;
+    }
+    .main_menu.active {
+        top: 60px;
+        z-index: 0;
+    }
+    .main_menu > li{
+        display: block;
+        border-bottom: 1px solid;
+    }
+    .dropdown_menu{
+    left: 115px;
+    top: 30%;
+    z-index: 999;
+    }
+}
+@media screen and (max-width:550px){
+    .dropdown_sub_menu{
+        top: 0;
+        left: 0;
+        background: #fff;
+      }
+
+.main_menu > li .dropdown_menu>li:hover .dropdown_sub_menu{         
+    transform: translateY(0);
+    top: 90%;
+    left: 10%;
+    z-index: 99;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    }
+}

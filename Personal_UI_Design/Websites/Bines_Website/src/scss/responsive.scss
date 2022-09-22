@@ -1,0 +1,51 @@
+@media screen and (max-width:1199px){
+// ****Slider-section***
+.slider-content h2{
+  font-size: 3rem;
+}
+.slider-content p:first-child{
+  font-size: 1.3rem;
+}
+.slider-content p:nth-last-child(2){
+  font-size: 1.5rem;
+}
+.our-btn{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+.slider-content{
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+}
+@media screen and (max-width:991px){
+  #about-section{
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width:767px){
+  .top-content{
+    display: block;
+    text-align: center;
+  }
+  .top-left ul,
+  .top-right ul{
+    display: block;
+  }
+  .top-left ul li{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  .top-right ul li{
+    display: inline-block;
+  }
+  .work-nav ul li{
+    font-size: 1rem;
+  }
+.top{
+  right: .5rem;
+  bottom:1rem;
+}
+}
