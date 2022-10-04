@@ -7,6 +7,12 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
 :root{
     --blue: #287bff;
     --white :#fff;
@@ -199,6 +205,7 @@ body{
     width: 40px;
     height: 40px;
     overflow: hidden;
+    right: 20px;
     cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -206,6 +213,7 @@ body{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 .user img{
     position: absolute;
     top: 0;
@@ -213,4 +221,367 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.user_settings{
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background: var(--white);
+    min-width: max-content;
+    z-index: 99;
+    transition: .5s;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    box-shadow: -1px 4px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 4px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 8px -1px rgba(0,0,0,0.75);
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+.user_settings ul li .btn{
+    text-align: center;
+    padding: 10px;
+}
+.user_settings ul li .btn button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #fcecec;
+    color: #e64141;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .5s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.user_settings ul li .btn button:hover{
+    background: #e64141;
+    color: var(--white);
+    cursor: pointer;
+  
+}
+.user_settings ul li .btn button ion-icon{
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+
+}
+.user_settings.active{
+    opacity: 1;
+    transition: .5s;
+}
+.user_settings ul li {
+	width: 300px;
+
+}
+.user_settings ul .userName h3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+    font-weight: normal;
+	padding-left: 10px;
+    
+}
+.user_settings ul .userName h3 span{
+    font-size: 13px;
+    font-weight: inherit;
+}
+.user_settings ul li span{
+    font-size: 10px;
+    display: block;
+    color: var(--black2);
+}
+.user_settings ul li .userItem {
+	display: block;
+	display: flex;
+    padding: 10px;
+	align-items: center;
+	color: var(--blue);
+	font-weight: 500;
+}
+.user_settings ul li .userItem ion-icon {
+	padding-right: 18px;
+	font-size: 23px;
+
+}
+.user_settings ul li:hover .userItem,
+.user_settings ul li:hover span
+{
+    background: var(--blue);
+    color: var(--white);
+}
+/* CardBox Start */
+
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.cardBox .card{
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.8);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--blue);
+}
+.cardBox .card .cardName{
+    color: var(--black2);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+.cardBox .card .iconBox{
+    font-size: 3.5em;
+    color: var(--black2);
+}
+.cardBox .card:hover{
+    background: var(--blue);
+}
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBox{
+    color: var(--white);
+}
+/* order Details section Start*/
+.details_detail_section {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+.details_detail_section .recentOrders{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.8);
+}
+.details_detail_section .cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.details_detail_section .cardHeader h2{
+    color: var(--blue);
+    font-weight: 600;
+}
+.details_detail_section .cardHeader .btn{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.details_detail_section .table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.details_detail_section .table thead td{
+    font-weight: 600;
+}
+.details_detail_section .recentOrders .table tr{
+    color: var(--block1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.details_detail_section .recentOrders .table tbody tr:last-child{
+    border-bottom: none;
+}
+.details_detail_section .recentOrders .table tbody tr:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+.details_detail_section .recentOrders .table tr td{
+    padding: 10px;
+}
+.details_detail_section .recentOrders .table tr td:last-child{
+    text-align: end;
+}
+.details_detail_section .recentOrders .table tr td:nth-child(2){
+    text-align: end;
+}
+.details_detail_section .recentOrders .table tr td:nth-child(3){
+    text-align: center;
+}
+.details_detail_section .status{
+    padding: 2px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.details_detail_section .status.delivered{
+    background: #8de02c;
+    color: var(--white);
+}
+.details_detail_section .status.paid{
+    background: #2405ef;
+    color: var(--white);
+}
+.details_detail_section .status.ongoing{
+    background: #f16000;
+    color: var(--white);
+}
+.details_detail_section .status.inProgress{
+    background: #888282;
+    color: var(--white);
+}
+/* recentCustomer */
+.recentCustomer{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.recentCustomer .imgBox{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.recentCustomer .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recentCustomer table tr:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    white-space: unset;
+}
+.recentCustomer table tr td{
+    padding: 12px 10px;
+}
+.recentCustomer table tr td h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.recentCustomer table tr td span{
+    font-size: 14px;
+    color: var(--black2);
+}
+.recentCustomer table tr:hover td span{
+    color: var(--white);
+}
+
+/* Responsive  */
+@media screen and (max-width:991px) {
+    .navigation{
+        left: -300px;
+    }
+    .navigation.active{
+        left: 0;
+        width: 300px;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        left: 300px;
+    }
+    .cardBox {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .details_detail_section {
+        grid-template-columns: 1fr;
+    }
+    .recentOrders{
+        overflow-x: auto;
+    }
+    .status.status.delivered{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width:668px){
+    .cardBox {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:480px){
+    .cardHeader h2{
+        font-size: 20px;
+    }
+    .user{
+        min-height: 40px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 100;
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+    .toggle{
+        z-index: 101;
+    }
+    .main.active .toggle{
+        position: fixed;
+        right: 0;
+        left: initial;
+        color: var(--white);
+    }
 }
