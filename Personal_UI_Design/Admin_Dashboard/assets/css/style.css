@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -41,19 +40,48 @@ body{
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+.dropdownToggleMenu{
+    cursor: pointer;
+}
 /* Dropdown Menus Start Styles */
-.dropdown_menu,
-.dropdown_sub_menu{
+.dropdown_menu{
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
   top:100%;
   left: 0;
   background: #fff;
-  opacity: 1;
-  visibility: visible;
   display: block;
+  overflow: hidden;
   z-index:999;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.dropdown_menu li{
+    margin-left: 5px;
+}
+.dropdown_menu li:first-child{
+    border-top: 1px solid #dbdbdb
+}
+.dropdown_menu li{
+    border-bottom: 1px solid #dbdbdb;
+}
+.dropdown_menu li .dropdown_item{
+    padding: 10px;
+    display: block;
+}
+.dropdown_menu li .dropdown_item:hover{
+    color: var(--blue);
+}
+
+.dropdown_menu.active{
+    width: 400px;
+    height: 150px;
 
 }
 /* .navigation .navi_items .nav_item:hover .dropdown_menu{
@@ -271,14 +299,10 @@ body{
     background: var(--white);
     min-width: max-content;
     z-index: 99;
-    transition: .5s;
+    transition:transform 0.5s;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
     box-shadow: -1px 4px 8px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 4px 8px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 4px 8px -1px rgba(0,0,0,0.75);
@@ -287,6 +311,10 @@ body{
     -moz-border-radius:5px ;
     -ms-border-radius:5px ;
     -o-border-radius:5px ;
+    -webkit-transition:transform 0.5s;
+    -moz-transition:transform 0.5s;
+    -ms-transition:transform 0.5s;
+    -o-transition:transform 0.5s;
 }
 .user_settings ul li .btn{
     text-align: center;
@@ -312,10 +340,14 @@ body{
     -o-transition: .5s;
 }
 .user_settings ul li .btn button:hover{
-    background: #e64141;
-    color: var(--white);
-    cursor: pointer;
-  
+   background: #e64141;
+   color: var(--white);
+   cursor: pointer;
+   transform:translateX(3px);
+   -webkit-transform:translateX(3px);
+   -moz-transform:translateX(3px);
+   -ms-transform:translateX(3px);
+   -o-transform:translateX(3px);
 }
 .user_settings ul li .btn button ion-icon{
     padding-right: 5px;
@@ -334,10 +366,9 @@ body{
 .user_settings ul .userName h3 {
 	padding-top: 20px;
 	padding-bottom: 20px;
-    font-weight: 500;
+    font-weight: 800;
 	padding-left: 10px;
-    text-shadow: 1px -3px 4px rgba(0,0,0,0.41);
-    
+    text-shadow: 1px -3px 4px rgba(0,0,0,0.41);   
 }
 .user_settings ul .userName h3 span{
     font-size: 13px;
@@ -355,6 +386,11 @@ body{
     align-items: center;
     color: var(--blue);
     font-weight: 500;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
 }
 .user_settings ul li .userItem ion-icon {
 	padding-right: 18px;
@@ -367,7 +403,64 @@ body{
 {
     background: var(--blue);
     color: var(--white);
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
 }
+.user_settings ul li:hover span{
+    background: transparent;
+}
+
+.words {
+
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--blue);
+  }
+  .words span {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-30%, 0);
+    }
+    50% {
+      text-shadow: 0 25px 50px rgba(0, 0, 0, 0.963);
+    }
+    100% {
+      transform: translate(30%, 0);
+    }
+  }
+  
+  .words span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .words span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .words span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  .words span:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .words span:nth-child(6) {
+    animation-delay: 2.5s;
+  }
+  
+  .words span:nth-child(7) {
+    animation-delay: 3s;
+  }
 /* CardBox Start */
 
 .cardBox{
