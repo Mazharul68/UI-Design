@@ -24,12 +24,15 @@
                     </span>
                 </a>
             </li>
-            <li class="nav_item dropdownToggleMenu">
-                <a class="item">
+            <li class="nav_item ">
+                <a class="item" href="javascript://">
                     <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <span class="title">Dashboard</span>
+                    <div class="plusFlex">
+                        <span class="title">Dashboard</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
                 </a>
-                <ul class="dropdown_menu">
+                <ul class="dropdown_menu" id="menu-90ba1a">
                     <li>
                         <a class="dropdown_item" href="">
                             <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
@@ -49,42 +52,72 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav_item dropdownToggleMenu">
+            <li class="nav_item">
+                <a class="item" href="javascript://" >
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <div class="plusFlex">
+                        <span class="title">Products</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+                <ul class="dropdown_menu">
+                    <li>
+                        <a class="dropdown_item" href="">
+                            <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            <span class="title">Create Product</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown_item" href="">
+                        <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                        <span class="title">Manage</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a class="item" href="#" >
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <div class="plusFlex">
+                        <span class="title">Pages</span>
+                    </div>
+                </a>
+            </li>
+            <!-- <li class="nav_item ">
                 <a class="item">
                     <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                     <span class="title">Customer</span>
                 </a>
             </li>
-            <li class="nav_item dropdownToggleMenu">
+            <li class="nav_item ">
                 <a class="item" href="">
                     <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                     <span class="title">Message</span>
                 </a>
             </li>
-            <li class="nav_item dropdownToggleMenu">
+            <li class="nav_item ">
                 <a class="item" href="">
                     <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
                     <span class="title">Help</span>
                 </a>
             </li>
-            <li class="nav_item dropdownToggleMenu">
+            <li class="nav_item ">
                 <a class="item" href="">
                     <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
                     <span class="title">Setting</span>
                 </a>
             </li>
-            <li class="nav_item dropdownToggleMenu">
+            <li class="nav_item ">
                 <a class="item" href="">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
                     <span class="title">Password</span>
                 </a>
             </li>
-            <li class="nav_item dropdownToggleMenu">
+            <li class="nav_item ">
                 <a class="item" href="">
                     <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                     <span class="title">Sign Out</span>
                 </a>
-            </li>
+            </li> -->
         </ul>
       </div>
       <!-- main Content   -->
@@ -266,7 +299,7 @@
         </div>
       </div>
     </div>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/fontawesome.js"></script>
@@ -277,10 +310,11 @@
         let toggle = document.querySelector('.toggle');
         let navigation = document.querySelector('.navigation');
         let closeOutline = document.querySelector('.toggle i');
+        let plusFlex = document.querySelector('.plusFlex i');
         let main = document.querySelector('.main');
         let user = document.querySelector('.user');
         let userSettings = document.querySelector('.user_settings');
-        let navItem = document.querySelector('.dropdownToggleMenu');
+        // let navItem = document.querySelectorAll('.dropdownToggleMenu');
         let dropdownMenu = document.querySelector('.dropdown_menu');
 
         toggle.onclick =function (){
@@ -294,9 +328,15 @@
 
         navItem.onclick = function(){
             dropdownMenu.classList.toggle('active');
+            plusFlex.classList.toggle('active')
         }
 
+         // toggle menu/navbar Scripts
+        $('.toggle').click(function() {
 
+        $('.main_menu').toggleClass("active");
+        $('.menu_section i').toggleClass("active");
+        });
 
         // let list = document.querySelectorAll('.navigation li');
         // function activeLink(){
