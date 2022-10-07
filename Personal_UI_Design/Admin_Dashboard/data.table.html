@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Data Table CSS Start -->
+    <link rel="stylesheet" href="dataTable/css/themes-base-jquery-ui.css">
+    <link rel="stylesheet" href="dataTable/css/dataTables.jqueryud.min.css">
+    <link rel="stylesheet" href="dataTable/css/dataTables.button.css">
+    <link rel="stylesheet" href="dataTable/css/syle.css">
+    <script src="dataTable/js/jquery.3.5.1.min.js"></script>
+  <!-- Data Table CSS  End-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+      <div class="navigation">
+        <ul class="navi_items">
+            <li class="nav_item">
+                <a class="item" href="index.html">
+                    <span class="icon"><img height="60px" src="assets/images/logo.png" alt=""></span>
+                    <span class="title">
+                        <div class="words">
+                            <span>A</span>
+                            <span>N</span>
+                            <span>G</span>
+                            <span>T</span>
+                          </div>
+                    </span>
+                </a>
+            </li>
+            <li class="nav_item ">
+                <a class="item" href="javascript://">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <div class="plusFlex">
+                        <span class="title">Dashboard</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+                <ul class="dropdown_menu" id="menu-90ba1a">
+                    <li>
+                        <a class="dropdown_item" href="blank.html">
+                            <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            <span class="title">blank page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown_item" href="">
+                        <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                        <span class="title">Blogs page</span></a>
+                    </li>
+                    <li>
+                        <a class="dropdown_item" href="">
+                        <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                        <span class="title">Contact page</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a class="item" href="javascript://" >
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <div class="plusFlex">
+                        <span class="title">Products items</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+                <ul class="dropdown_menu">
+                    <li>
+                        <a class="dropdown_item" href="data.table.html">
+                            <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            <span class="title">Data Table</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown_item" href="">
+                        <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
+                        <span class="title">Manage</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a class="item" href="#" >
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <div class="plusFlex">
+                        <span class="title">Pages</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+      </div>
+      <!-- main Content   -->
+      <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="search">
+                <label for="">
+                    <input type="text" placeholder="Search Here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="allUsers">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+               <ul>
+                <li>
+                    <a class="iq_items" href="">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                        <span>All Users (19)</span> 
+                    </a> &nbsp;&nbsp;
+                    <a class="iq_items" href="">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                        <span>Active Now (108)</span> 
+                    </a>
+                </li>
+               </ul>
+            </div>
+            <!-- userImg -->
+            <div class="user">
+                <img height="50px" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+            </div>
+            <div class="user_settings">
+                <ul>
+                        <div class="userName"  href="">
+                            <h3>Md Mazharul Islam <br> <span>Available</span></h3>
+                        </div>
+                    <li>
+                        <a class="userItem"  href="">
+                            <ion-icon name="person-add-outline"></ion-icon>
+                            <div>
+                                <strong>My Profile</strong>
+                                <span>View Personal profile details</span>
+                            </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="userItem" href="">
+                        <ion-icon name="settings-outline"></ion-icon>
+                        <div>
+                            <strong>Settings</strong>
+                            <span>Modify your personal details</span>
+                        </div>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <div class="btn">
+                          
+                            <button type="submit"><ion-icon name="log-out-outline"></ion-icon><strong>Sign out</strong></button>
+                        </div>
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- Main Content Start -->
+        <div class="main_content_area">
+            
+            <table id="example" class="display export_table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                        <!-- <th colspan="2">Action</th>
+                        <th colspan="2">Action</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+        </div>
+    <!-- Main Content End -->
+     <!-- Footer -->
+    <footer class="dashboard_footer_section">
+        <p>Copyright &copy;2022 ANGT. Designed by ANGT Developer team</p>
+        </footer>
+       
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Data Table Js Start-->
+    <script src="dataTable/js/dataTables1.min.js"></script>
+    <script src="dataTable/js/dataTables2.min.js"></script>
+    <script src="dataTable/js/dataTables3.min.js"></script>
+    <script src="dataTable/js/dataTables4.min.js"></script>
+    <script src="dataTable/js/dataTable5.min.js"></script>
+    <script src="dataTable/js/dataTables.pdf1.min.js"></script>
+    <script src="dataTable/js/dataTables.pdf2.min.js"></script>
+    <script src="dataTable/js/dataTables.button1.min.js"></script>
+    <script src="dataTable/js/dataTable.print.js"></script>
+    <script src="dataTable/js/dataTables.colvis.min.js"></script>
+    <script src="dataTable/js/main.js"></script>
+    <!-- Data Table Js End-->
+    <script>
+
+        /// ManuToggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let closeOutline = document.querySelector('.toggle i');
+        let plusFlex = document.querySelector('.plusFlex i');
+        let main = document.querySelector('.main');
+        let user = document.querySelector('.user');
+        let userSettings = document.querySelector('.user_settings');
+        // let navItem = document.querySelectorAll('.dropdownToggleMenu');
+        let dropdownMenu = document.querySelector('.dropdown_menu');
+
+        toggle.onclick =function (){
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+            closeOutline.classList.toggle('active');
+        }
+        user.onclick = function(){
+            userSettings.classList.toggle('active');
+        }
+
+        navItem.onclick = function(){
+            dropdownMenu.classList.toggle('active');
+            plusFlex.classList.toggle('active')
+        }
+
+         // toggle menu/navbar Scripts
+        $('.toggle').click(function() {
+
+        $('.main_menu').toggleClass("active");
+        $('.menu_section i').toggleClass("active");
+        });
+
+        // let list = document.querySelectorAll('.navigation li');
+        // function activeLink(){
+        //     list.forEach((item) => item.classList.remove('hovered'));
+        //     // this.classList.add('hovered');
+        // }
+        // list.forEach((item) => item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
+</html>
