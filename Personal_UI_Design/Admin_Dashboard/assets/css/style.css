@@ -13,11 +13,12 @@ a{
     text-decoration: none;
 }
 :root{
-    --blue: #17B794;
-    --white :#fff;
-    --grey: #f5f5f5;
-    --block1:#222;
-    --black2:#999;
+    --bgColor: #17B794;
+    --textColor :#fff;
+}
+.dark-theme {
+    --bgColor: #fff;
+    --textColor :#17B792;
 }
 body{
     min-height: 100vh;
@@ -31,8 +32,8 @@ body{
     position: fixed;
     width: 300px;
     height: 100%;
-    background: var(--blue);
-    border-left: 10px solid var(--blue);
+    background: var(--bgColor);
+    border-left: 10px solid var(--bgColor);
     overflow: hidden;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -62,23 +63,23 @@ body{
     position: relative;
 }
 /* Dropdown Menus Start Styles */
-.dropdown_menu{
-    width: 100%;
-    height: 100%;
-  position: relative;
-  top:100%;
-  left: 0;
-  background: #fff;
-  display: block;
-  overflow: hidden;
-  z-index:999;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+.dropdown_menu {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 100%;
+	left: 0;
+	background: var(--textColor);
+	display: block;
+	overflow: hidden;
+	z-index: 999;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 }
 .dropdown_menu li{
     margin-left: 5px;
@@ -89,12 +90,20 @@ body{
 .dropdown_menu li{
     border-bottom: 1px solid #dbdbdb;
 }
-.dropdown_menu li .dropdown_item{
-    padding: 10px;
-    display: block;
+.dropdown_menu li .dropdown_item {
+	padding: 10px;
+	display: block;
+	color: var(--bgColor);
 }
-.dropdown_menu li .dropdown_item:hover{
-    color: var(--blue);
+.dropdown_menu .dropdown_item .icon{
+    position: relative;
+    top: 3px;
+}
+.dropdown_menu li .dropdown_item:hover {
+	background: var(--bgColor);
+	color: var(--textColor);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .dropdown_menu.active{
@@ -133,19 +142,25 @@ body{
 .navigation ul.navi_items li.nav_item:hover,
 .navigation ul.navi_items li.nav_item.hovered
 {
-    background: var(--white);
+    background: var(--textColor);
+    margin: 1px;
     
 }
 .navigation ul.navi_items li.nav_item.active{
-    background: var(--white);
+    background: var(--textColor);
+    padding-bottom: 1px;
 }
 .navigation ul.navi_items li.nav_item.active .item{
-    color: var(--blue);
+    color: var(--bgColor);
 }
 .navigation ul.navi_items li.nav_item:nth-child(1) {
 	margin-bottom: 29px;
 	border-top-left-radius: unset;
 	border-bottom-left-radius: unset;
+    border-left: 0;
+    box-shadow: 0px 2px 10px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 10px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 10px -2px rgba(0,0,0,0.75);
 }
 /* .navigation ul.navi_items li.nav_item:nth-child(1){
     margin-bottom: 20px;
@@ -157,12 +172,12 @@ body{
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: var(--white);
+    color: var(--textColor);
 }
 .navigation ul.navi_items li.nav_item:hover a.item ,
 .navigation ul.navi_items li.nav_item.hovered a.item 
 {
-    color: var(--blue);
+    color: var(--bgColor);
 }
 .navigation ul.navi_items li.nav_item a.item .icon{
     position: relative;
@@ -194,7 +209,7 @@ body{
     width: 50px;
     background: transparent;
     top: -50px;
-    box-shadow:  35px 35px 0 10px var(--white);
+    box-shadow:  35px 35px 0 10px var(--textColor);
     pointer-events: none;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -212,7 +227,7 @@ body{
     width: 50px;
     background: transparent;
     bottom: -50px;
-    box-shadow:  35px -35px 0 10px var(--white);
+    box-shadow:  35px -35px 0 10px var(--textColor);
     pointer-events: none;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -227,7 +242,7 @@ body{
  width: calc(100% - 300px);
  left: 300px;
  min-height: 100vh;
- background: var(--white);
+ background: var(--textColor);
  transition:0.5s ;
  -webkit-transition:0.5s ;
  -moz-transition:0.5s ;
@@ -236,7 +251,10 @@ body{
 }
 .main_content_area{
     height: 100vh;
-    padding: 5px;
+    padding: 10px;
+}
+.main_content_area h1{
+    color: var(--black2);
 }
 .main.active{
     width: calc(100% - 74px);
@@ -248,7 +266,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--blue);
+    background: var(--bgColor);
     position: sticky;
     top: 0;
     left: 0;
@@ -264,7 +282,7 @@ body{
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
-    color: var(--white);
+    color: var(--textColor);
 }
 .toggle i{
     font-size: 25px;
@@ -282,27 +300,31 @@ body{
     position: relative;
     width: 100%;
 }
-.search label input{
-    width: 100%;
-    height: 40px;
-    padding: 5px 20px;
-    outline: none;
-    padding-left: 35px;
-    border: 1px solid var(--black2);
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+.search label input {
+	width: 100%;
+	height: 40px;
+	padding: 5px 20px;
+	outline: none;
+	padding-left: 35px;
+	border: 1px solid var(--black2);
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+	color: var(--bgColor);
+    background: var(--textColor);
 }
+
 .search label ion-icon{
     position: absolute;
     top: 0;
     left: 10px;
     font-size: 1.2em;
 }
-.allUsers ul li .iq_items{
-    color: var(--white);
+.allUsers ul li .iq_items {
+	color: var(--textColor);
+	padding-left: 22px;
 }
 .allUsers ul li .iq_items:hover{
     color: var(--block1);
@@ -310,6 +332,48 @@ body{
 .allUsers ul li .iq_items span{
     font-size: bold;
     font-size: 18px;
+}
+.allUsers{
+    position: relative;
+    padding-right: 30px;
+}
+#dark-btn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    background: rgb(51, 46, 46);
+    width: 45px;
+    padding: 2px 3px;
+    transition: padding-left 0.5s, background 0.5s;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: padding-left 0.5s, background 0.5s;
+    -moz-transition: padding-left 0.5s, background 0.5s;
+    -ms-transition: padding-left 0.5s, background 0.5s;
+    -o-transition: padding-left 0.5s, background 0.5s;
+}
+
+#dark-btn span {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#dark-btn.dark-btn-on {
+    padding-left: 23px;
+    background: #17B794;
 }
 .user{
     position: relative;
@@ -339,7 +403,7 @@ body{
     position: absolute;
     right: 10px;
     top: 60px;
-    background: var(--white);
+    background: var(--bgColor);
     min-width: max-content;
     z-index: 99;
     transition:transform 0.5s;
@@ -384,7 +448,7 @@ body{
 }
 .user_settings ul li .btn button:hover{
    background: #e64141;
-   color: var(--white);
+   color: #fff;
    cursor: pointer;
    transform:translateX(3px);
    -webkit-transform:translateX(3px);
@@ -411,7 +475,8 @@ body{
 	padding-bottom: 20px;
     font-weight: 800;
 	padding-left: 10px;
-    text-shadow: 1px -3px 4px rgba(0,0,0,0.41);   
+    text-shadow: 1px -3px 4px rgba(0,0,0,0.41);
+    color: var(--textColor);
 }
 .user_settings ul .userName h3 span{
     font-size: 13px;
@@ -427,7 +492,7 @@ body{
     display: flex;
     padding: 10px;
     align-items: center;
-    color: var(--blue);
+    color: var(--textColor);
     font-weight: 500;
     transition: 0.1s;
     -webkit-transition: 0.1s;
@@ -441,16 +506,15 @@ body{
 
 }
 
-.user_settings ul li:hover .userItem,
-.user_settings ul li:hover span
-{
-    background: var(--blue);
-    color: var(--white);
-    transform: translateX(2px);
-    -webkit-transform: translateX(2px);
-    -moz-transform: translateX(2px);
-    -ms-transform: translateX(2px);
-    -o-transform: translateX(2px);
+.user_settings ul li:hover .userItem, 
+.user_settings ul li:hover span {
+	color: var(--bgColor);
+	background: var(--textColor);
+	transform: translateX(2px);
+	-webkit-transform: translateX(2px);
+	-moz-transform: translateX(2px);
+	-ms-transform: translateX(2px);
+	-o-transform: translateX(2px);
 }
 .user_settings ul li:hover span{
     background: transparent;
@@ -460,7 +524,7 @@ body{
 
     font-size: 10px;
     line-height: 1.5;
-    color: var(--white);
+    color: var(--textColor);
   }
   .words span {
     font-size: 3rem;
@@ -516,7 +580,7 @@ body{
 }
 .cardBox .card{
     position: relative;
-    background: var(--white);
+    background: var(--textColor);
     padding: 30px;
     border-radius: 20px;
     display: flex;
@@ -532,7 +596,7 @@ body{
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--blue);
+    color: var(--bgColor);
 }
 .cardBox .card .cardName{
     color: var(--black2);
@@ -544,12 +608,12 @@ body{
     color: var(--black2);
 }
 .cardBox .card:hover{
-    background: var(--blue);
+    background: var(--bgColor);
 }
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .cardName,
 .cardBox .card:hover .iconBox{
-    color: var(--white);
+    color: var(--textColor);
 }
 /* order Details section Start*/
 .details_detail_section {
@@ -565,7 +629,7 @@ body{
     position: relative;
     display: grid;
     min-height: 500px;
-    background: var(--white);
+    background: var(--textColor);
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.8);
 }
@@ -575,15 +639,15 @@ body{
     align-items: flex-start;
 }
 .details_detail_section .cardHeader h2{
-    color: var(--blue);
+    color: var(--bgColor);
     font-weight: 600;
 }
 .details_detail_section .cardHeader .btn{
     position: relative;
     padding: 5px 10px;
-    background: var(--blue);
+    background: var(--bgColor);
     text-decoration: none;
-    color: var(--white);
+    color: var(--textColor);
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -606,8 +670,8 @@ body{
     border-bottom: none;
 }
 .details_detail_section .recentOrders .table tbody tr:hover{
-    background: var(--blue);
-    color: var(--white);
+    background: var(--bgColor);
+    color: var(--textColor);
 }
 .details_detail_section .recentOrders .table tr td{
     padding: 10px;
@@ -633,19 +697,19 @@ body{
 }
 .details_detail_section .status.delivered{
     background: #8de02c;
-    color: var(--white);
+    color: var(--textColor);
 }
 .details_detail_section .status.paid{
     background: #2405ef;
-    color: var(--white);
+    color: var(--textColor);
 }
 .details_detail_section .status.ongoing{
     background: #f16000;
-    color: var(--white);
+    color: var(--textColor);
 }
 .details_detail_section .status.inProgress{
     background: #888282;
-    color: var(--white);
+    color: var(--textColor);
 }
 /* recentCustomer */
 .recentCustomer{
@@ -653,7 +717,7 @@ body{
     display: grid;
     min-height: 500px;
     padding: 20px;
-    background: var(--white);
+    background: var(--textColor);
     box-shadow: 0 7px 25px rgba(0,0,0,0.8);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -681,8 +745,8 @@ body{
     object-fit: cover;
 }
 .recentCustomer table tr:hover{
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--bgColor);
+    color: var(--textColor);
     white-space: unset;
 }
 .recentCustomer table tr td{
@@ -698,7 +762,7 @@ body{
     color: var(--black2);
 }
 .recentCustomer table tr:hover td span{
-    color: var(--white);
+    color: var(--textColor);
 }
 
 /* Responsive  */
@@ -723,9 +787,9 @@ body{
 }
   /* Footer Section */
   .dashboard_footer_section {
-	background: var(--blue);
+	background: var(--bgColor);
 	padding: 1rem;
-	color: #fff;
+	color: var(--textColor);
 	font-size: smaller;
 	text-align: center;
 }
@@ -772,6 +836,6 @@ body{
         position: fixed;
         right: 0;
         left: initial;
-        color: var(--white);
+        color: var(--textColor);
     }
 }

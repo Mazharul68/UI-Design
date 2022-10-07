@@ -136,6 +136,9 @@
                 </label>
             </div>
             <div class="allUsers">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
                <ul>
                 <li>
                     <a class="iq_items" href="">
@@ -332,9 +335,8 @@
         let main = document.querySelector('.main');
         let user = document.querySelector('.user');
         let userSettings = document.querySelector('.user_settings');
-        // let navItem = document.querySelectorAll('.dropdownToggleMenu');
-        let dropdownMenu = document.querySelector('.dropdown_menu');
-
+       
+    
         toggle.onclick =function (){
             navigation.classList.toggle('active');
             main.classList.toggle('active');
@@ -355,6 +357,8 @@
         $('.main_menu').toggleClass("active");
         $('.menu_section i').toggleClass("active");
         });
+
+         
 
         // let list = document.querySelectorAll('.navigation li');
         // function activeLink(){
