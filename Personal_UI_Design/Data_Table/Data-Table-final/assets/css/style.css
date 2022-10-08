@@ -1,0 +1,27 @@
+body {margin:2em;}
+
+
+div.dataTables_wrapper div.dataTables_info {
+	white-space: nowrap;
+	position: absolute;
+	bottom: 20px;
+	margin: 0;
+}
+#example_wrapper {
+	position: relative;
+}
+.dt-buttons {
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+	font-weight: normal;
+	white-space: nowrap;
+	text-align: left;
+	margin-top: 0rem;
+	position: absolute;
+	right: 0;
+}
