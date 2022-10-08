@@ -519,7 +519,6 @@ body{
 .user_settings ul li:hover span{
     background: transparent;
 }
-
 .words {
 
     font-size: 10px;
@@ -554,6 +553,54 @@ body{
     color: var(--textColor);
   }
   /* breadcrumb_area Style  End*/
+  /* form_section_area Start Here*/
+  .form_section_area .form_area{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding-top: 20px;
+  }
+  .form_section_area .form_area .fields{
+    display: flex;
+    flex-direction: column;
+  }
+  .form_section_area .form_area .fields label{
+    padding-bottom: 5px;
+  }
+  .form_section_area .form_area .fields input,
+  .form_section_area .form_area .fields textarea
+   {
+    width: 100%;
+	outline: none;
+	padding: 6px 5px;
+	font-size: 17px;
+	background: #eee;
+}
+.form_section_area .form_area .description{
+    grid-column: 1/3;
+    grid-column: 1/4;
+    grid-column: 1/-1;
+}
+  .form_section_area .form_area .fields input:focus,
+  .form_section_area .form_area .fields textarea:focus
+   {
+	background: rgb(255, 254, 254);
+}
+.form_section_area .form_area .btn_submit {
+	border: none;
+	background: var(--bgColor);
+	display: block;
+	padding: 10px 20px;
+	font-size: 18px;
+	color: var(--textColor);
+    cursor: pointer;
+}
+.form_section_area .form_area .btn_submit:hover{
+    background: #000;
+}
+  /* form_section_area End Here*/
   
   @keyframes move {
     0% {
