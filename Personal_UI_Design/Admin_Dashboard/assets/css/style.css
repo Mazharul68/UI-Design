@@ -532,6 +532,28 @@ body{
     display: inline-block;
     animation: move 3s ease-in-out infinite;
   }
+
+  /* breadcrumb_area Style  Start*/
+  .breadcrumb_area{
+    background: var(--bgColor);
+    padding: 7px 10px;
+  }
+  .breadcrumb_area h3{
+    color: var(--textColor);
+  }
+  .breadcrumb_area ul{
+    display:flex;
+    align-items: center;
+  }
+  .breadcrumb_area .breadcrumb_area_item .iq_items{
+    padding-top: 6px;
+    display: block;
+    padding: 5px 6px;
+  }
+  .breadcrumb_area .breadcrumb_area_item .iq_items span{
+    color: var(--textColor);
+  }
+  /* breadcrumb_area Style  End*/
   
   @keyframes move {
     0% {

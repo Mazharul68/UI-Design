@@ -4,12 +4,15 @@ div.dt-buttons {
 	text-align: center;
 	left: 2%;
 }
+table.dataTable.no-footer {
+	box-shadow: unset;
+}
 table.dataTable {
 	border-collapse: separate;
 	border-spacing: 0;
 	/* text-align: center; */
 	/* background: red; */
-	box-shadow: 0px 2px 3px 1px;
+	box-shadow: unset;
 }
 table.dataTable.stripe > tbody > tr > *, 
 table.dataTable.display > tbody > tr > * {
