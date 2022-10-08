@@ -250,7 +250,6 @@ body{
  -o-transition:0.5s ;
 }
 .main_content_area{
-    height: 100vh;
     padding: 10px;
 }
 .main_content_area h1{
@@ -861,6 +860,7 @@ body{
 	color: var(--textColor);
 	font-size: smaller;
 	text-align: center;
+	margin-top: 15px;
 }
 
 
@@ -948,7 +948,9 @@ body{
 {
    height: 44px;
 }
-.login_form .inputBox textarea:focus ~ i{
+.login_form .inputBox textarea:valid ~ i,
+.login_form .inputBox textarea:focus ~ i
+{
     height: 100%  
 }
 .login_box .links{
