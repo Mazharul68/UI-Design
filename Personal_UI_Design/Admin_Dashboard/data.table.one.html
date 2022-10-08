@@ -5,16 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-
-        <!-- Data Table CSS Start -->
-        
-        <link rel="stylesheet" href="dataTable/css/themes-base-jquery-ui.css">
-        <link rel="stylesheet" href="dataTable/css/dataTables.jqueryud.min.css">
-        <link rel="stylesheet" href="dataTable/css/dataTables.button.css">
-        <link rel="stylesheet" href="dataTable/css/syle.css">
-        <script src="dataTable/js/jquery.3.5.1.min.js"></script>
-      <!-- Data Table CSS  End-->
-
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -22,7 +12,7 @@
       <div class="navigation">
         <ul class="navi_items">
             <li class="nav_item">
-                <a class="item" href="">
+                <a class="item" href="index.html">
                     <span class="icon"><img height="60px" src="assets/images/logo.png" alt=""></span>
                     <span class="title">
                         <div class="words">
@@ -72,21 +62,15 @@
                 </a>
                 <ul class="dropdown_menu">
                     <li>
-                        <a class="dropdown_item" href="data.table.html">
+                        <a class="dropdown_item" href="">
                             <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
-                            <span class="title">Data Table</span>
+                            <span class="title">Create Product</span>
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown_item" href="data.table.one.html">
-                            <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
-                            <span class="title">Data Table Two</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown_item" href="form.html">
+                        <a class="dropdown_item" href="">
                         <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span>
-                        <span class="title">Form</span></a>
+                        <span class="title">Manage</span></a>
                     </li>
                 </ul>
             </li>
@@ -137,7 +121,6 @@
         </ul>
       </div>
       <!-- main Content   -->
-     
       <div class="main">
         <div class="topbar">
             <div class="toggle">
@@ -206,156 +189,61 @@
                 </ul>
             </div>
         </div>
-        <!-- Card -->
-        <div class="cardBox">
-            <div class="card">
-                <div>
-                    <div class="numbers">1,504</div>
-                    <div class="cardName">Daily</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="eye-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <div class="numbers">8485</div>
-                    <div class="cardName">Sales</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="cart-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <div class="numbers">856</div>
-                    <div class="cardName">Comments</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="link-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <div class="numbers">$ 256</div>
-                    <div class="cardName">Earning</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="cash-outline"></ion-icon>
-                </div>
-            </div>
-        </div>
-        <!--order Details List -->
-        <div class="details_detail_section">
-            <div class="recentOrders">
-                <div class="cardHeader">
-                    <h2>Recent Orders</h2>
-                    <a href="" class="btn">View All</a>
-                </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Price</td>
-                            <td>Payment</td>
-                            <td>Status</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status paid">paid</span></td>
-                        </tr>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status delivered">Delivered</span></td>
-                        </tr>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status ongoing">ongoing</span></td>
-                        </tr>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status delivered">Delivered</span></td>
-                        </tr>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status inProgress">In Progress</span></td>
-                        </tr>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status delivered">Delivered</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- new customer -->
-                <div class="recentCustomer">
-                    <div class="cardHeader">
-                        <h2>Recent Customer</h2>
+    <!-- Main Content Start -->
+    <style>
+
+
+    </style>
+        <div class="main_content_area">
+            <section class="login_area">
+                <div class="login_box">
+                    <form class="login_form">
+                        <!-- <h2>Sign In</h2> -->
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Name</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" required="required">
+                            <span>Email</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" required="required">
+                            <span>phone</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Address</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox inputBox_description">
+                            <textarea required="required" rows="5" cols="5"></textarea>
+                            <span>Description</span>
+                            <i></i>
+                        </div>
+                        <input class="btn_login" type="submit" value="Login">
                     </div>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBox"><img src="https://media.istockphoto.com/photos/happy-smiling-woman-working-in-call-center-picture-id1244527145?k=20&m=1244527145&s=612x612&w=0&h=wPadMAh7Eenm33uqSKgC3wFJQSjpOpGEgpV2HP7Ehkk=" alt=""></div></td>
-                            <td><h4>Mazharul Islam</h4><br><span>Bangladesh</span></td>
-                        </tr>
-                        <tr>
-                            <td width="60px"><div class="imgBox"><img src="https://media.istockphoto.com/photos/happy-smiling-woman-working-in-call-center-picture-id1244527145?k=20&m=1244527145&s=612x612&w=0&h=wPadMAh7Eenm33uqSKgC3wFJQSjpOpGEgpV2HP7Ehkk=" alt=""></div></td>
-                            <td><h4>Mazharul Islam</h4><br><span>Bangladesh</span></td>
-                        </tr>
-                        <tr>
-                            <td width="60px"><div class="imgBox"><img src="https://media.istockphoto.com/photos/happy-smiling-woman-working-in-call-center-picture-id1244527145?k=20&m=1244527145&s=612x612&w=0&h=wPadMAh7Eenm33uqSKgC3wFJQSjpOpGEgpV2HP7Ehkk=" alt=""></div></td>
-                            <td><h4>Mazharul Islam</h4><br><span>Bangladesh</span></td>
-                        </tr>
-                        <tr>
-                            <td width="60px"><div class="imgBox"><img src="https://media.istockphoto.com/photos/happy-smiling-woman-working-in-call-center-picture-id1244527145?k=20&m=1244527145&s=612x612&w=0&h=wPadMAh7Eenm33uqSKgC3wFJQSjpOpGEgpV2HP7Ehkk=" alt=""></div></td>
-                            <td><h4>Mazharul Islam</h4><br><span>Bangladesh</span></td>
-                        </tr>
-                        <tr>
-                            <td width="60px"><div class="imgBox"><img src="https://media.istockphoto.com/photos/happy-smiling-woman-working-in-call-center-picture-id1244527145?k=20&m=1244527145&s=612x612&w=0&h=wPadMAh7Eenm33uqSKgC3wFJQSjpOpGEgpV2HP7Ehkk=" alt=""></div></td>
-                            <td><h4>Mazharul Islam</h4><br><span>Bangladesh</span></td>
-                        </tr>
-                    </table>
                 </div>
+            </section>
         </div>
-           <!-- Footer -->
-           <footer class="dashboard_footer_section">
-            <p>Copyright &copy;2022 ANGT. Designed by ANGT Developer team</p>
+    <!-- Main Content End -->
+     <!-- Footer -->
+    <footer class="dashboard_footer_section">
+        <p>Copyright &copy;2022 ANGT. Designed by ANGT Developer team</p>
         </footer>
+       
       </div>
+      
+     
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/fontawesome.js"></script>
     <script src="assets/js/main.js"></script>
-
-       <!-- Data Table Js Start-->
-       <!-- <script src="assets/js/bootstrap.min.js"></script> -->
-       <script src="dataTable/js/dataTables1.min.js"></script>
-       <script src="dataTable/js/dataTables2.min.js"></script>
-       <script src="dataTable/js/dataTables3.min.js"></script>
-       <script src="dataTable/js/dataTables4.min.js"></script>
-       <script src="dataTable/js/dataTable5.min.js"></script>
-       <script src="dataTable/js/dataTables.pdf1.min.js"></script>
-       <script src="dataTable/js/dataTables.pdf2.min.js"></script>
-       <script src="dataTable/js/dataTables.button1.min.js"></script>
-       <script src="dataTable/js/dataTable.print.js"></script>
-       <script src="dataTable/js/dataTables.colvis.min.js"></script>
-       <script src="dataTable/js/main.js"></script>
-       <!-- Data Table Js End-->
     <script>
 
         /// ManuToggle
@@ -366,8 +254,9 @@
         let main = document.querySelector('.main');
         let user = document.querySelector('.user');
         let userSettings = document.querySelector('.user_settings');
-       
-    
+        // let navItem = document.querySelectorAll('.dropdownToggleMenu');
+        let dropdownMenu = document.querySelector('.dropdown_menu');
+
         toggle.onclick =function (){
             navigation.classList.toggle('active');
             main.classList.toggle('active');
@@ -388,8 +277,6 @@
         $('.main_menu').toggleClass("active");
         $('.menu_section i').toggleClass("active");
         });
-
-         
 
         // let list = document.querySelectorAll('.navigation li');
         // function activeLink(){
