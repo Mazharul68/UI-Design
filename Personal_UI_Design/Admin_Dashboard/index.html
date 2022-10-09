@@ -194,35 +194,111 @@
                 </ul>
             </div>
         </div>
+        <style>
+            .flip-box {
+              background-color: transparent;
+              width: 100%;
+              height: 100%;
+              perspective: 1000px;
+            }
+            .flip-box-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+            }
+            
+            .flip-box:hover .flip-box-inner {
+              transform: rotateX(180deg);
+            }
+            .flip-box-front, .flip-box-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              z-index: 1;
+            }
+            .flip-box-back {
+              background-color: dodgerblue;
+              color: white;
+              transform: rotateX(180deg);
+              border-radius: 20px;
+            }
+            </style>
         <!-- Card -->
         <div class="cardBox">
-            <a href="" class="card">
-                <div>
-                    <div class="numbers">1,504</div>
-                    <div class="cardName">Weekly Sale</div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="" class="card ">
+                            <div>
+                                <div class="numbers">1,504</div>
+                                <div class="cardName">Weekly Sale</div>
+                            </div>
+                            <div class="iconBox">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flip-box-back">
+                        <a href="" class="card ">
+                            <div>
+                                <div class="numbers">1,504</div>
+                                <div class="cardName">Weekly Sale</div>
+                            </div>
+                        </a>
+                      </div>
                 </div>
-                <div class="iconBox">
-                    <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="" class="card">
+                            <div>
+                                <div class="numbers">8485</div>
+                                <div class="cardName">Order Received</div>
+                            </div>
+                            <div class="iconBox">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flip-box-back">
+                        <a href="" class="card ">
+                            <div>
+                                <div class="numbers">1,504</div>
+                                <div class="cardName">Weekly Sale</div>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
                 </div>
-            </a>
-            <a href="" class="card">
-                <div>
-                    <div class="numbers">8485</div>
-                    <div class="cardName">Order Received</div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="" class="card">
+                            <div>
+                                <div class="numbers">856</div>
+                                <div class="cardName">New Users</div>
+                            </div>
+                            <div class="iconBox">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flip-box-back">
+                        <a href="" class="card ">
+                            <div>
+                                <div class="numbers">856</div>
+                                <div class="cardName">New Users</div>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
                 </div>
-                <div class="iconBox">
-                    <ion-icon name="cart-outline"></ion-icon>
-                </div>
-            </a>
-            <a href="" class="card">
-                <div>
-                    <div class="numbers">856</div>
-                    <div class="cardName">New Users</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="people-outline"></ion-icon>
-                </div>
-            </a>
             <a href="" class="card">
                 <div>
                     <div class="numbers">$ 256</div>
@@ -231,8 +307,8 @@
                 <div class="iconBox">
                     <ion-icon name="cash-outline"></ion-icon>
                 </div>
+            </a>
             </div>
-        </a>
         <!--order Details List -->
         <div class="details_detail_section">
             <div class="recentOrders">

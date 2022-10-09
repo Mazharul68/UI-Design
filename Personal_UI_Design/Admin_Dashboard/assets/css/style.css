@@ -636,13 +636,14 @@ body{
   }
 /* CardBox Start */
 
-.cardBox{
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    grid-gap: 30px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.cardBox {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	grid-gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+	z-index: 0;
 }
 .cardBox .card {
 	position: relative;
