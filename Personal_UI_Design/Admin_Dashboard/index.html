@@ -18,7 +18,7 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
       <div class="navigation">
         <ul class="navi_items">
             <li class="nav_item">
@@ -196,43 +196,43 @@
         </div>
         <!-- Card -->
         <div class="cardBox">
-            <div class="card">
+            <a href="" class="card">
                 <div>
                     <div class="numbers">1,504</div>
-                    <div class="cardName">Daily</div>
+                    <div class="cardName">Weekly Sale</div>
                 </div>
                 <div class="iconBox">
                     <ion-icon name="eye-outline"></ion-icon>
                 </div>
-            </div>
-            <div class="card">
+            </a>
+            <a href="" class="card">
                 <div>
                     <div class="numbers">8485</div>
-                    <div class="cardName">Sales</div>
+                    <div class="cardName">Order Received</div>
                 </div>
                 <div class="iconBox">
                     <ion-icon name="cart-outline"></ion-icon>
                 </div>
-            </div>
-            <div class="card">
+            </a>
+            <a href="" class="card">
                 <div>
                     <div class="numbers">856</div>
-                    <div class="cardName">Comments</div>
+                    <div class="cardName">New Users</div>
                 </div>
                 <div class="iconBox">
-                    <ion-icon name="link-outline"></ion-icon>
+                    <ion-icon name="people-outline"></ion-icon>
                 </div>
-            </div>
-            <div class="card">
+            </a>
+            <a href="" class="card">
                 <div>
                     <div class="numbers">$ 256</div>
-                    <div class="cardName">Earning</div>
+                    <div class="cardName">Weekly Earning</div>
                 </div>
                 <div class="iconBox">
                     <ion-icon name="cash-outline"></ion-icon>
                 </div>
             </div>
-        </div>
+        </a>
         <!--order Details List -->
         <div class="details_detail_section">
             <div class="recentOrders">
@@ -377,14 +377,6 @@
         $('.menu_section i').toggleClass("active");
         });
 
-         
-
-        // let list = document.querySelectorAll('.navigation li');
-        // function activeLink(){
-        //     list.forEach((item) => item.classList.remove('hovered'));
-        //     // this.classList.add('hovered');
-        // }
-        // list.forEach((item) => item.addEventListener('mouseover', activeLink));
     </script>
 </body>
 </html>

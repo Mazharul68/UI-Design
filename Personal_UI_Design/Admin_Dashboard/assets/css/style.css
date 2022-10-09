@@ -24,7 +24,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
 }
-.container{
+.wrapper{
     position: relative;
     width: 100%;
 }
@@ -644,43 +644,84 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
-.cardBox .card{
-    position: relative;
-    background: var(--textColor);
-    padding: 30px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.8);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.cardBox .card {
+	position: relative;
+    overflow: hidden;
+    z-index: 1;
+	background: var(--textColor);
+	/* background: #17B794; */
+    background: url('../images/01.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+	padding: 30px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.7);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
 }
-.cardBox .card .numbers{
-    position: relative;
-    font-weight: 500;
-    font-size: 2.5em;
-    color: var(--bgColor);
+.cardBox .card:nth-child(1){
+    background: url('../images/02.webp');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
-.cardBox .card .cardName{
-    color: var(--black2);
-    font-size: 1.1em;
-    margin-top: 5px;
+.cardBox .card:nth-child(3){
+    background: url('../images/03.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.cardBox .card:nth-child(4){
+    background: url('../images/04.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.cardBox .card::before{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(253, 252, 252, 0.9);
+    width: 100%;
+    z-index: -1;
+}
+.cardBox .card .numbers {
+	position: relative;
+	font-weight: bold;
+	font-size: 26px;
+	color: #E10000;
+}
+.cardBox .card .cardName {
+	color: var(--black2);
+	font-size: 16px;
+	margin-top: 5px;
 }
 .cardBox .card .iconBox{
-    font-size: 3.5em;
+    font-size: 40px;
     color: var(--black2);
 }
-.cardBox .card:hover{
+/* .cardBox .card:hover{
     background: var(--bgColor);
 }
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .cardName,
 .cardBox .card:hover .iconBox{
     color: var(--textColor);
-}
+} */
 /* order Details section Start*/
 .details_detail_section {
     position: relative;
