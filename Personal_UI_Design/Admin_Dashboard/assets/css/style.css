@@ -638,14 +638,27 @@ body{
 
 
 .cardBox {
-	position: relative;
+	position:relative;
 	width: 100%;
+    height: 100%;
 	padding: 20px;
 	grid-gap: 30px;
 	display: grid;
 	/* grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); */
 	grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
 	z-index: 0;
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
 }
 .cardBox .card {
 	position: relative;
@@ -669,29 +682,15 @@ body{
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 }
-
-
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: 0.8s;
-    transform-style: preserve-3d;
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -ms-transition: 0.8s;
-    -o-transition: 0.8s;
-}
-  
-  /* .flip-box:hover .flip-box-inner {
+ .flip-box-inner:hover {
     transform: rotateX(180deg);
     -webkit-transform: rotateX(180deg);
     -moz-transform: rotateX(180deg);
     -ms-transform: rotateX(180deg);
     -o-transform: rotateX(180deg);
-} */
+} 
   .card, .flip-box-back {
+    top: 0;
     position: absolute;
     width: 100%;
     height: 100%;
