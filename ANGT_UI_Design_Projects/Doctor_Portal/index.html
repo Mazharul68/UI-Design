@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/resources/css/style.css">
+    <link rel="stylesheet" href="assets/resources/css/responsive.css">
+    <script>function goBack() {window.history.back();}</script>  
+    <script src='assets/resources/js/jquery.min.js'></script>  
+    <script src="js/jquery-ui.min.js" ></script>  
+    <script src="js/autoFillHtml.js"></script>  
+    <script src="js/nicEdit-latest.js" type="text/javascript"></script>  
+    <script src="js/moments.js"></script>  
+    <script src="js/jquery-confirm.js"></script>  
+
+    <link href="js/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+    <link rel="stylesheet" href="js/jquery-confirm.css">
+    <title>Doctor Portal</title>
+</head>
+<style>
+    .ads_container_2 {
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+	background: #71d371;
+	padding: 10px;
+	font-family: "Platformian";
+	font-size: 15px;
+	/* font-weight: bold; */
+}
+</style>
+<body cz-shortcut-listen="true">
+<div id="tanz-54855-container">
+<div id="tanz-container">
+
+<div class="z_admin_bar">
+<b>User:</b> emon007 | <b>Plan:</b> Free | <b>Free Limit:</b> 98 | <b>Balance:</b> 0 TK | <b>Status:</b> 
+<b><green>Active</green></b></div>
+
+<div class="menubar">
+<div class="mnu-a-1 mnu-a-1-active"><a href="ps.php"><u>P</u>rescription</a></div>
+<div class="mnu-a-3"><a href="view_all_prescription.php"><u>V</u>iew All Prescription</a></div>
+<div class="mnu-a-2"><a href="drug.php"><u>D</u>rug Database</a></div>
+<div class="dropdown">
+  <button class="dropbtn">Template</button>
+  <div class="dropdown-content">
+  <a href="drug_template.php">Drug Template</a>
+    <a href="treatment_template.php">Treatment Template</a>
+    <a href="advice_template.php">Advice Template</a>
+    <a href="cc_template.php">C/C Template</a>
+	<a href="oe_template.php">O/E Template</a>
+	<a href="ix_template.php">I/X Template</a>
+	<a href="dose_template.php">Dose Template</a>
+	<a href="duration_template.php">Duration Template</a>
+	<a href="oe_options.php">O/E Box Options</a>
+	
+  </div>
+</div>
+<div class="mnu-a-4"><a href="appointment.php"><u>A</u>ppointment</a></div>
+<div class="mnu-a-7"><a href="payment.php"><u>P</u>ayment</a></div>
+<div class="mnu-a-5"><a href="header_edit.php"><u>H</u>eader Edit</a></div>
+
+<div class="dropdown">
+  <button class="dropbtn"><u>P</u>age Setup</button>
+  <div class="dropdown-content">
+  
+<a href="page_setup_2.php"><u>P</u>age Setup</a>
+<a href="page_options.php"><u>P</u>age Option</a>
+<a href="setting_options.php"><u>S</u>ettings</a>
+
+  </div>
+</div>
+
+
+
+<div class="dropdown">
+  <button class="dropbtn"><u>S</u>MS</button>
+  <div class="dropdown-content">
+  <a href="generate_sms.php"><u>G</u>enerate SMS</a>
+  <a href="send_sms.php"><u>S</u>end SMS</a>
+  </div>
+</div>
+
+
+
+<div class="mnu-a-9"><a href="buy_credit.php"><u>B</u>uy Credit</a></div>
+<div class="mnu-a-9"><a href="use_offline.php"><u>U</u>se Offline</a></div>
+
+<div class="dropdown">
+  <button class="dropbtn"><u>A</u>ccount</button>
+  <div class="dropdown-content">
+  <a href="logout.php"><u>L</u>og Out</a>
+  <a href="change_pw.php"><u>C</u>hange Password</a>
+  <a href="https://www.youtube.com/watch?v=Vqp6VIgBlZ8"><u>W</u>atch Tutorial</a>
+  <a href="help.php"><u>A</u>bout</a>
+  </div>
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-54676305-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54676305-2');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '763693090940100');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=763693090940100&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->	
+</div>
+<!-- END MAIN NAV -->
+<div id="pres-i-body">
+<form name="mainpres" id="mainpres" action="print_process.php" target="_blank" method="POST">
+<div class="cript-info-container-full">
+<div class="cript-info-container-left">
+<table>
+<tbody><tr>
+<td>Name</td>
+<td>:</td>
+<td><input type="text" name="name" value="" id="name" autocomplete="off"></td>
+<td class="rt-y-3">Age</td>
+<td>:</td>
+<td><input type="text" id="age" name="age" value="" style="text-transform:uppercase" maxlength="4" autocomplete="off"></td>
+<td>Sex</td>
+<td>:</td>
+<td class="rt-y-2"><input type="text" value="" id="sex" name="sex" style="text-transform:uppercase" maxlength="1" autocomplete="off"></td>
+<td>Address</td>
+<td>:</td>
+<td><input type="text" id="address" value="" name="address" autocomplete="off" class="ui-autocomplete-input"></td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>:</td>
+<td><input type="text" name="mobile" value="" id="mobile" autocomplete="off" class="ui-autocomplete-input"></td>
+<td class="rt-y-1">Reg No.</td>
+<td>:</td>
+<td><input type="number" name="regno" id="regno" value="63942" class="ui-autocomplete-input" autocomplete="off"></td>
+<td colspan="3"> <input type="text" class="apnt_searh_1 search-input ui-autocomplete-input" placeholder="Appointment" autocomplete="off"> </td>
+<td>Date</td>
+<td>:</td>
+<td><input type="text" id="date" name="date" value="01/02/2023" autocomplete="off" class="hasDatepicker"></td>
+</tr>
+</tbody></table>
+</div>
+<div class="cript-info-container-right">
+<div class="pres-toolz-border-bar">
+<div class="pres-b-12-container">
+<div class="pres-b-12">
+<img src="/assets/img/icons/preview.png" width="25" height="25">
+
+</div>
+<div class="pres-b-12-text">
+Preview
+</div>
+</div>
+<div class="pres-b-14-container">
+<div class="pres-b-12">
+<img src="/assets/img/icons/printer.png" width="25" height="25">
+</div>
+<div class="pres-b-12-text">
+Save &amp; Print
+</div>
+</div>
+<div class="pres-b-13-container">
+<div class="pres-b-13">
+<img src="/assets/img/icons/floppy-disk.png" width="25" height="25">
+</div>
+<div class="pres-b-13-text">
+Save &amp; Print<br>
+Without header
+</div>
+</div>
+<div class="pres-b-15-container">
+<div class="pres-b-15">
+<img src="/assets/img/icons/diskette.png" width="25" height="25">
+</div>
+<div class="pres-b-15-text">
+Save Only
+<div class="loader"></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="cc-left-b-cnt">
+
+
+
+
+
+
+<div class="pbox-cc-title">Disease/Condition/Dx</div>
+<div id="pbox-dx-body">
+<input type="text" id="dx" name="dx" class="ui-autocomplete-input" autocomplete="off">
+</div>
+<div class="pbox-cc-title">C/C</div>
+<div class="pbox-cc-body" contenteditable="true">
+<textarea name="cc" id="prcc" class="ui-autocomplete-input" autocomplete="off"></textarea>
+</div>
+<div class="pbox-oe-title">
+<div class="oe_text_box" style="font-weight: bold; background: rgb(255, 201, 7);">
+O/E
+</div>
+<div class="oe_text_select" style="font-weight: normal; background: rgb(255, 255, 255);">
+O/E (Box)
+</div>
+<div class="oe_text_transfer">
+Box → O/E
+</div>
+
+<div class="oe_box_hide_show">[ - ]</div>
+
+
+
+</div>
+<div class="pbox-oe-body" style="display: block;">
+<textarea name="oe" id="proe" style="display: block;" class="ui-autocomplete-input" autocomplete="off"></textarea>
+</div>
+<div class="pbox_oe_select" style="display: none;">
+<input type="text" name="col_id_num" id="col_id_num" value="10" hidden=""><table>
+<tbody><tr>
+<td class="aut_in_1"> <b>BP</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50670" hidden="">
+<input type="text" id="oe_name_0" name="oe_name[]" value="BP" hidden="">
+<input type="text" id="oe_value_0" name="oe_value[]" ref="BP" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Pulse</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50671" hidden="">
+<input type="text" id="oe_name_1" name="oe_name[]" value="Pulse" hidden="">
+<input type="text" id="oe_value_1" name="oe_value[]" ref="Pulse" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Temp</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50672" hidden="">
+<input type="text" id="oe_name_2" name="oe_name[]" value="Temp" hidden="">
+<input type="text" id="oe_value_2" name="oe_value[]" ref="Temp" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Heart</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50673" hidden="">
+<input type="text" id="oe_name_3" name="oe_name[]" value="Heart" hidden="">
+<input type="text" id="oe_value_3" name="oe_value[]" ref="Heart" value="S1+S2+M0" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Lungs</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50674" hidden="">
+<input type="text" id="oe_name_4" name="oe_name[]" value="Lungs" hidden="">
+<input type="text" id="oe_value_4" name="oe_value[]" ref="Lungs" value="NAD" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Abd</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50675" hidden="">
+<input type="text" id="oe_name_5" name="oe_name[]" value="Abd" hidden="">
+<input type="text" id="oe_value_5" name="oe_value[]" ref="Abd" value="Soft, Non-Tender" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Anaemia</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50676" hidden="">
+<input type="text" id="oe_name_6" name="oe_name[]" value="Anaemia" hidden="">
+<input type="text" id="oe_value_6" name="oe_value[]" ref="Anaemia" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Jaundice</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50677" hidden="">
+<input type="text" id="oe_name_7" name="oe_name[]" value="Jaundice" hidden="">
+<input type="text" id="oe_value_7" name="oe_value[]" ref="Jaundice" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Cyanosis</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50678" hidden="">
+<input type="text" id="oe_name_8" name="oe_name[]" value="Cyanosis" hidden="">
+<input type="text" id="oe_value_8" name="oe_value[]" ref="Cyanosis" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+<tr>
+<td class="aut_in_1"> <b>Oedema</b> </td>
+<td> 
+<input type="text" name="oe_id[]" value="50679" hidden="">
+<input type="text" id="oe_name_9" name="oe_name[]" value="Oedema" hidden="">
+<input type="text" id="oe_value_9" name="oe_value[]" ref="Oedema" value="" class="oe_select_in_all">
+</td><td> 
+</td></tr>
+
+</tbody></table>
+</div>
+<div class="pbox-oe-title">Ix</div>
+<div class="pbox-ix-body">
+<textarea name="pix" id="pix" class="ui-autocomplete-input" autocomplete="off"></textarea>
+</div>
+<div class="advice_bn_cnt">
+<div class="advice_title_bar">
+Drug History
+</div>
+<div class="advice_bdy_1">
+<table>
+<tbody><tr>
+<td class="dr_his_l_1" valign="top">
+<textarea name="drughistory" id="drughistory"></textarea>
+</td>
+<td class="dr_his_l_2" valign="top">
+<input type="text" name="s_durh_h" id="s_durh_h" class="search-input search-input--material ui-autocomplete-input" placeholder="Type Brand" autocomplete="off">
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="bmi_container">
+<div class="history_men_element">
+<div class="calc_block_menu_1">
+BMI
+</div>
+<div class="calc_block_menu_2">
+Insulin
+</div>
+<div class="calc_block_menu_3">
+Z-Score
+</div>
+<div class="calc_block_menu_4">
+BMR
+</div>
+<div class="calc_block_menu_5">
+EDD
+</div>
+</div>
+<table id="tb_bmi">
+<tbody><tr>
+<td> Weight (Kg)</td>
+<td> Height (Feet)</td>
+<td> Height (Inch)</td>
+<td> BMI= </td>
+</tr>
+<tr>
+<td> <input type="text" name="bmi_weigh" class="bmi_weigh" autocomplete="off">  </td>
+<td> <input type="text" name="bmi_height" class="bmi_height" autocomplete="off"> </td>
+<td> <input type="text" name="bmi_inch" class="bmi_inch" autocomplete="off"></td>
+<td> <input type="text" name="bmi_result" class="bmi_result" autocomplete="off"></td>
+</tr>
+<tr>
+<td colspan="2"> <b>Class:</b> <input type="text" name="bmi_class" class="bmi_class" autocomplete="off">  </td>
+<td colspan="2"> <b>Ideal Weight:</b> <input type="text" name="ideal_wt" class="ideal_wt" autocomplete="off"> </td>
+</tr>
+</tbody></table>
+<table id="tb_insulin">
+<tbody><tr>
+<td> Weight (Kg)</td>
+<td> Unit/Kg</td>
+<td> Time </td>
+<td> Total Unit= </td>
+</tr>
+<tr>
+<td> <input type="text" name="insulin_weigh" class="insulin_weigh" autocomplete="off">  </td>
+<td> <input type="text" name="insulin_unit_kg" class="insulin_unit_kg" value="0.3" autocomplete="off"> </td>
+<td> 
+<select name="insulin_time" class="insulin_time">
+<option value="3">TDS</option>
+<option value="2" selected="">BD</option>
+<option value="1">Mono</option>
+</select>
+</td>
+<td> <input type="text" name="insulin_total" class="insulin_total" autocomplete="off"></td>
+</tr>
+<tr>
+<td colspan="4"> <b>Dose:</b> <input type="text" name="insulin_class" class="insulin_class" autocomplete="off">  </td>
+</tr>
+</tbody></table>
+<table id="tb_zscore">
+<tbody><tr>
+<td class="zsc_dob"> Date Of Birth</td>
+<td class="zsc_gender"> Gender</td>
+<td> Weight (Kg) </td>
+</tr>
+<tr>
+<td> <input type="text" name="sd_dob" class="sd_dob hasDatepicker" id="dob" autocomplete="off">  </td>
+<td> 
+<input type="radio" id="z_male" name="sd_gender" value="Male" checked="">
+<label for="male">M</label>
+<input type="radio" id="female" name="sd_gender" value="Female">
+<label for="female">F</label><br>
+</td>
+<td> <input type="text" name="sd_weight" class="sd_weight" autocomplete="off"></td>
+</tr>
+<tr>
+<td colspan="2"> <b>Result:</b> <input type="text" name="sd_result" class="sd_result" autocomplete="off">  </td>
+<td colspan="1"> <b> <input type="text" name="sd_age" class="sd_age" autocomplete="off"></b> Days  </td>
+</tr>
+<tr>
+<td colspan="3"> <div class="sd_display"></div> </td>
+</tr>
+</tbody></table>
+<table id="tb_bmr">
+<tbody><tr>
+<td> Weight (Kg)</td>
+<td> Height (Feet)</td>
+<td> Height (Inch)</td>
+<td> Gender </td>
+</tr>
+<tr>
+<td> <input type="text" name="bmr_weigh" class="bmr_weigh" autocomplete="off">  </td>
+<td> <input type="text" name="bmr_height" class="bmr_height" autocomplete="off"> </td>
+<td> <input type="text" name="bmr_result" class="bmr_inch" autocomplete="off"></td>
+<td> 
+<input type="radio" id="male" name="bmr_gender" value="Male" checked="">
+<label for="male">M</label>
+<input type="radio" id="b_female" name="bmr_gender" value="Female">
+<label for="female">F</label><br>
+</td>
+</tr>
+<tr>
+<td colspan="1"> <b>Age:</b> <input type="number" name="bmr_age" class="bmr_age" autocomplete="off">  </td>
+<td colspan="2"> <b>Activity:</b> 
+<select class="bmr_activity">
+<option value="1.2" selected="">No Excercise</option>
+<option value="1.375">Light Exercise</option>
+<option value="1.55">Moderate</option>
+<option value="1.725">Very Active</option>
+<option value="1.9">Heavy Active</option>
+</select>
+</td>
+<td colspan="1"> <b>BMR:</b> <input type="text" name="bmr_val" class="bmr_val" autocomplete="off"> </td>
+</tr>
+<tr>
+<td colspan="4"> <div class="bmr_calory_need"></div>    </td>
+</tr>
+</tbody></table>
+<input type="text" name="p_edd" class="p_edd" hidden=""><table id="tb_edd">
+<tbody><tr>
+<td> LMP</td>
+<td> <input type="text" name="edd_lmp" id="edd_lmp" autocomplete="off" class="hasDatepicker">  </td>
+</tr>
+<tr>
+<td>Gestational Age (LMP) </td>
+<td> <div class="dis_gest_age"></div>  </td>
+</tr>
+<tr>
+<td>EDD (LMP) </td>
+<td> <div class="dis_edd"></div>  </td>
+</tr>
+
+</tbody></table>
+</div>
+<div class="all_history_z">
+<div class="history_men_element">
+<div class="his_block_menu_1">
+Past History
+</div>
+<div class="his_block_menu_2">
+Present History
+</div>
+<div class="his_block_menu_3">
+Notes
+</div>
+<div class="his_block_present">
+<textarea name="z_past_history" placeholder="Past medical history" id="z_past_history"></textarea>
+</div>
+<div class="his_block_present">
+<textarea name="z_present_history" placeholder="History of present illness" id="z_present_history"></textarea>
+</div>
+<div class="his_block_present">
+<textarea name="h_notes" placeholder="Notes" id="h_notes"></textarea>
+</div>
+</div>
+</div>
+
+
+
+<div class="all_history_print_y">
+<hru><b>PRINT:</b> &nbsp; &nbsp;</hru>
+<input type="checkbox" id="pnt_present_his" name="pnt_past_his" value="yes">Past H/O
+<input type="checkbox" id="pnt_past_his" name="pnt_present_his" value="yes">Present H/O
+<input type="checkbox" id="pnt_notes" name="pnt_notes" value="yes">Notes
+<input type="checkbox" id="pnt_edd" name="pnt_edd" value="yes">EDD
+</div>
+
+
+
+
+
+
+
+</div>
+<div id="cc-right-bdy-cnt">
+<div id="p-drug-slt-bar">
+<div id="p-1120-left">
+<div id="pres-56423-title">
+<div id="mtrn01">Type Brand Name</div>
+<div id="mtrn02">Type Dose</div>
+<div id="mtrn03">Duration</div>
+</div>
+<div id="pres-571236-in">
+<div id="mtrn01"><input type="text" id="brandname" name="brandname" class="ui-autocomplete-input" autocomplete="off"></div>
+<div id="mtrn02"><input type="text" id="dose" name="brandname" class="ui-autocomplete-input" autocomplete="off"></div>
+<div id="mtrn03"><input type="text" id="instruction" name="instruction" class="ui-autocomplete-input" autocomplete="off"></div>
+<button type="button" onclick="fday()">D</button>
+<button type="button" onclick="fmonth()">M</button>
+<input type="checkbox" id="antice" value="খাবার আগে">&nbsp;খাবার আগে
+<input type="checkbox" id="postce" value="খাবার পর">&nbsp;খাবার পর
+<input type="text" class="bland_id" name="bland_id" value="" hidden="">
+<input type="text" id="zilsdes" name="zilsdes" value="" hidden="">
+<input type="text" id="revisit" name="revisit" value="" hidden="">
+<input type="text" id="h_drug_history" name="h_drug_history" value="" hidden="">
+<input type="text" name="ttid" id="ttid" value="24010220232207418813" hidden="">
+</div>
+</div>
+<div id="p-1120-right">
+<input type="button" id="adddrug" value="ADD" onclick="addText()">
+</div>
+</div>
+<div id="lt-filter-cnt">
+<div class="ads_container_2">
+<a href="#" target="_blank">
+<!-- <a href="https://zilsoft.net/demo/ps3.php" target="_blank"> -->
+ডক্টরস পোর্টাল ৭.০ ডুয়াল UI টেস্ট করুন। <br>
+ক্লিক করুন এখানে।<br>
+অর্ডার করতে- 01617-18-0711
+</a>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_1">GET Drug Template</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="drugtemplate" id="drugtemplate" autocomplete="off"></div>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_1">Generic to brand (Random)</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="generictemplate" id="generictemplate" autocomplete="off"></div>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_2">GET Treatment Template</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="searchtemplate" id="searchtemplate" autocomplete="off"></div>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_3">GET Advice Template</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="searchAdvicetemplate" id="searchAdvicetemplate" autocomplete="off"></div>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_4">GET C/C Template</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="searchCCtemplate" id="searchCCtemplate" autocomplete="off"></div>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_5">GET O/E Template</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="searchOEtemplate" id="searchOEtemplate" autocomplete="off"></div>
+</div>
+<div class="treatment_template_contained">
+<div class="fl745sntwe_6">GET I/X Template</div>
+<div class="tr_template_search_box"><input type="text" class="search-input search-input--material ui-autocomplete-input" name="searchIXtemplate" id="searchIXtemplate" autocomplete="off"></div>
+</div>
+
+
+<div class="ads_container">
+<div class="ads_1_rwp">
+<a href="https://www.facebook.com/groups/zilsoft/" target="_blank">আমাদের ফেসবুক গ্রুপে জয়েন করুন
+</a>
+</div></div>
+
+
+
+<div class="advice_bn_cnt_2">
+<div class="ltbarc-1">
+Filter
+</div>
+<input type="text" id="valbcompany" name="valbcompany" value="" hidden=""><input type="text" id="valbgeneric" name="valbgeneric" value="" hidden=""><table id="distable">
+<tbody><tr><td id="mtbl"><b>Company:</b></td><td><input type="text" id="bcompany" name="bcompany" class="ui-autocomplete-input" autocomplete="off"></td></tr>
+
+<tr><td id="mtbl"><b>Generic:</b></td><td><input type="text" id="bgeneric" name="bgeneric" class="ui-autocomplete-input" autocomplete="off"></td></tr>
+
+<tr><td id="mtbl"><b>Brand:</b></td></tr>
+</tbody></table>
+<div id="dispayme">
+<table id="example" class="display" width="100%" cellspacing="0">
+</table>
+</div>
+</div>
+<div class="filter_ld_cnt">
+</div>
+</div>
+<div id="rt-filter-cnt">
+<div class="drug_info_cnt">
+</div>
+<div style="width: 773px;" unselectable="off"><div style="overflow: hidden; width: 100%; border: medium none; background-color: rgb(239, 239, 239);" class=" nicEdit-panelContain" unselectable="off"><div style="margin: 0px 2px 2px; overflow: hidden;" class=" nicEdit-panel" unselectable="off"><div style="float: left; margin-top: 2px; display: none;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -432px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -54px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -126px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -342px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -162px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -72px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -234px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -144px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -180px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -324px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin: 2px 1px 0px;" unselectable="off"><div style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 0.6;" class=" nicEdit-selectContain" unselectable="off"><div style="overflow: hidden; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);" unselectable="off"><div style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;" class=" nicEdit-selectControl" unselectable="off"></div><div style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;" class=" nicEdit-selectTxt" unselectable="off">Font&nbsp;Size...</div></div></div></div><div style="float: left; margin: 2px 1px 0px;" unselectable="off"><div style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 0.6;" class=" nicEdit-selectContain" unselectable="off"><div style="overflow: hidden; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);" unselectable="off"><div style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;" class=" nicEdit-selectControl" unselectable="off"></div><div style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;" class=" nicEdit-selectTxt" unselectable="off">Font&nbsp;Family...</div></div></div></div><div style="float: left; margin: 2px 1px 0px;" unselectable="off"><div style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 0.6;" class=" nicEdit-selectContain" unselectable="off"><div style="overflow: hidden; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);" unselectable="off"><div style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;" class=" nicEdit-selectControl" unselectable="off"></div><div style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;" class=" nicEdit-selectTxt" unselectable="off">Font&nbsp;Format...</div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -108px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;" unselectable="off"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain" unselectable="off"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined" unselectable="off"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -198px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -360px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -468px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -378px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -396px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -36px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div><div style="float: left; margin-top: 2px;"><div style="width: 20px; height: 20px; opacity: 0.6;" class=" nicEdit-buttonContain"><div style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);" class=" nicEdit-button-undefined"><div style="width: 18px; height: 18px; overflow: hidden; cursor: pointer; background-image: url(&quot;images/nicEditIcons-latest.gif&quot;); background-position: -18px 0px;" class=" nicEdit-button" unselectable="off"></div></div></div></div></div></div></div><div style="width: 100%; border-color: currentcolor; border-style: none; border-width: 0px medium medium; border-image: none 100% / 1 / 0 stretch; overflow: hidden auto;"><div style="width: 765px; margin: 4px; min-height: 300px; overflow: hidden;" class=" nicEdit-main" contenteditable="true"></div></div><textarea name="presmbdytnz" id="presmbdytnz" style="display: none;"></textarea>
+<div id="dinporasben">
+<input type="text" name="sysrevisit" value="" id="sysrevisit">&nbsp;
+<input type="checkbox" id="revdin" value="দিন" onclick="revDin()">দিন
+<input type="checkbox" id="revmas" value="মাস" onclick="revMas()">মাস  ...............  পর আসবেন।
+</div>
+<input type="text" id="def_din_p" value="" hidden="">
+<div class="pres_payment_rw">
+<table>
+<tbody><tr>
+<td class="ps_p_bx_1" valign="middle">
+<pamt>Paid (TK)</pamt>
+<input type="number" name="paid_amount" value="300" class="ps_paid_amt">
+</td>
+<td class="ps_p_bx_1" valign="middle">
+<pamt>Visit No</pamt>
+<input type="number" name="visit_number" value="1" class="ps_visit_count">
+</td>
+<td class="ps_p_bx_1" valign="middle">
+<lcame>Last Visit</lcame>
+<input type="number" name="last_came" value="0" class="ps_last_came">
+days ago
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div class="upload_dummy">
+
+<input type="button" class="upld_file_btn" value="Upload File">
+<span class="srgr_1">Drag &amp; Drop Uplaod</span>
+
+
+</div>
+
+
+
+
+
+<input type="text" name="file_up_id" class="file_up_id" value="75010220232207415822" hidden="">
+<input type="text" name="oe_last_css" class="oe_last_css" value="1" hidden="">
+<input type="text" name="appoint_id" class="apt_ref" value="" hidden="">
+</div>
+
+</div></form>
+</div>
+</div>
+</div>
+
+<script src="avro_files/avro-v1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+$(function(){
+$('#dose').avro({'bn':true}, function(isBangla) {
+if(isBangla) {
+$('.mode').text('English');
+} else {
+$('.mode').text('Bangla');
+}
+});
+$('#instruction').avro({'bn':true}, function(isBangla) {
+if(isBangla) {
+$('.mode').text('English');
+} else {
+$('.mode').text('Bangla');
+}
+});
+$('#advicebox').avro({'bn':true}, function(isBangla) {
+if(isBangla) {
+$('.mode').text('English');
+} else {
+$('.mode').text('Bangla');
+}
+});
+});
+</script>
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-3" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-4" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-5" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-6" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-7" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-8" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-9" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-10" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-11" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-12" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-13" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-14" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-15" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-16" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-17" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-18" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-19" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-20" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-21" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
