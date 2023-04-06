@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/resources/css/style.css">
+    <link rel="stylesheet" href="assets/resources/css/responsive.css">
+    <script>function goBack() {window.history.back();}</script>  
+    <script src='assets/resources/js/jquery.min.js'></script>  
+    <script src="js/jquery-ui.min.js" ></script>  
+    <script src="js/autoFillHtml.js"></script>  
+    <script src="js/nicEdit-latest.js" type="text/javascript"></script>  
+    <script src="js/moments.js"></script>  
+    <script src="js/jquery-confirm.js"></script>  
+
+    <link href="js/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+    <link rel="stylesheet" href="js/jquery-confirm.css">
+    <title>Doctor Portal</title>
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="z_login_header">
+    <img src="images/zilsoft_logo.png">
+    </div>
+    <div class="z_login_cnt">
+    <div class="z_register_box">
+    <div class="z_login_but_1">
+    Register
+    </div>
+    <div class="z_login_but_2">
+    Login
+    </div>
+    <div class="z_register_bdy">
+    <form autocomplete="off" id="regform" action="register_process.php" method="POST">
+    <input type="text" name="gcapv" id="gcapv" value="854624" hidden=""><table>
+    <tbody><tr>
+    <td><strong>Username
+        <red>*</red>
+        <red></red>
+    </strong></td>  				<td> <input type="text" name="username" id="username" class="reg_z_in" required=""> </td>  	<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Password
+        <red>*</red>
+    </strong></td>  				<td> <input type="password" name="pass" id="pass" class="reg_z_in" required=""> </td>  <td>  	</td>
+    </tr>
+    <tr>
+    <td><strong>Retype Password
+        <red>*</red>
+    </strong></td>  		<td> <input type="password" name="repass" id="repass" class="reg_z_in" required=""> </td>  		<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Email
+        <red>*</red>
+    </strong></td>  				<td> <input type="email" name="email" id="email" class="reg_z_in" required=""> </td>  		<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Mobile
+        <red>*</red>
+    </strong></td>  				<td> <input type="text" name="mobile" id="mobile" class="reg_z_in" required=""> </td>  		<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Full Name
+        <red>*</red>
+    </strong></td>  			<td> <input type="text" name="name" id="name" class="reg_z_in" required=""> </td>  			<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Doctor Type
+        <red>*</red>
+    </strong></td>  			<td> 
+      <input type="radio" name="doctype" value="MBBS" checked="">MBBS
+      <input type="radio" name="doctype" value="BDS">BDS
+     </td>  	<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Medical College
+        <red>*</red>
+    </strong></td> 		<td> <input type="text" name="medical" id="medical" class="reg_z_in" required=""> </td>  	<td>  </td>
+    </tr>
+    <tr>
+    <td><strong>Current Practice Area
+        <red>*</red>
+    </strong></td>  
+    <td> 
+    <select name="area" id="area" class="reg_z_in" required="">
+    <option value=""></option>
+    <option value="BAGERHAT">BAGERHAT</option>
+    <option value="BANDARBAN">BANDARBAN</option>
+    <option value="BARGUNA">BARGUNA</option>
+    <option value="BARISAL">BARISAL</option>
+    <option value="BHOLA">BHOLA</option>
+    <option value="BOGRA">BOGRA</option>
+    <option value="BRAHMANBARIA">BRAHMANBARIA</option>
+    <option value="CHANDPUR">CHANDPUR</option>
+    <option value="CHITTAGONG">CHITTAGONG</option>
+    <option value="CHUADANGA">CHUADANGA</option>
+    <option value="COMILLA">COMILLA</option>
+    <option value="COXS BAZAR">COXS BAZAR</option>
+    <option value="DHAKA">DHAKA</option>
+    <option value="DINAJPUR">DINAJPUR</option>
+    <option value="FARIDPUR">FARIDPUR</option>
+    <option value="FENI">FENI</option>
+    <option value="GAIBANDHA">GAIBANDHA</option>
+    <option value="GAZIPUR">GAZIPUR</option>
+    <option value="GOPALGANJ">GOPALGANJ</option>
+    <option value="HABIGANJ">HABIGANJ</option>
+    <option value="JAMALPUR">JAMALPUR</option>
+    <option value="JESSORE">JESSORE</option>
+    <option value="JHALOKATI">JHALOKATI</option>
+    <option value="JHENAIDAH">JHENAIDAH</option>
+    <option value="JOYPURHAT">JOYPURHAT</option>
+    <option value="KHAGRACHARI">KHAGRACHARI</option>
+    <option value="KHULNA">KHULNA</option>
+    <option value="KISHOREGANJ">KISHOREGANJ</option>
+    <option value="KURIGRAM">KURIGRAM</option>
+    <option value="KUSHTIA">KUSHTIA</option>
+    <option value="LAKSHMIPUR">LAKSHMIPUR</option>
+    <option value="LALMONIRHAT">LALMONIRHAT</option>
+    <option value="MADARIPUR">MADARIPUR</option>
+    <option value="MAGURA">MAGURA</option>
+    <option value="MANIKGANJ">MANIKGANJ</option>
+    <option value="MAULVIBAZAR">MAULVIBAZAR</option>
+    <option value="MEHERPUR">MEHERPUR</option>
+    <option value="MUNSHIGANJ">MUNSHIGANJ</option>
+    <option value="MYMENSINGH">MYMENSINGH</option>
+    <option value="NAOGAON">NAOGAON</option>
+    <option value="NARAIL">NARAIL</option>
+    <option value="NARAYANGANJ">NARAYANGANJ</option>
+    <option value="NARSINGDI">NARSINGDI</option>
+    <option value="NATORE">NATORE</option>
+    <option value="NAWABGANJ">NAWABGANJ</option>
+    <option value="NETROKONA">NETROKONA</option>
+    <option value="NILPHAMARI">NILPHAMARI</option>
+    <option value="NOAKHALI">NOAKHALI</option>
+    <option value="PABNA">PABNA</option>
+    <option value="PANCHAGARH">PANCHAGARH</option>
+    <option value="PATUAKHALI">PATUAKHALI</option>
+    <option value="PIROJPUR">PIROJPUR</option>
+    <option value="RAJBARI">RAJBARI</option>
+    <option value="RAJSHAHI">RAJSHAHI</option>
+    <option value="RANGAMATI">RANGAMATI</option>
+    <option value="RANGPUR">RANGPUR</option>
+    <option value="SATKHIRA">SATKHIRA</option>
+    <option value="SHARIATPUR">SHARIATPUR</option>
+    <option value="SHERPUR">SHERPUR</option>
+    <option value="SIRAJGONJ">SIRAJGONJ</option>
+    <option value="SUNAMGANJ">SUNAMGANJ</option>
+    <option value="SYLHET">SYLHET</option>
+    <option value="TANGAIL">TANGAIL</option>
+    <option value="THAKURGAON">THAKURGAON</option>
+    </select>
+    </td>  			
+    <td>  </td>
+    </tr>
+    <tr>
+    <td>
+      <strong><br>
+    <br>
+    Enter Captcha Code
+    <red>*</red>
+      </strong></td>  				<td> </td>  	<td>  </td>
+    </tr>
+    <tr>
+    <td colspan="3"> <img src="captcha2/8.jpg"> </td>
+    </tr>
+    <tr>
+    <td colspan="3"> <input type="text" name="captcha" id="captcha" class="captcha_z_in" required=""> </td>
+    </tr>
+    
+    </tbody></table>
+    <input type="hidden" name="key" value="hsgRw537Mxhsgywtsdgtwfsd">
+    </form></div>
+    <div class="z_login_submit">
+    <input type="button" class="login_subm_bt" value="Register">
+    <div class="login_err_bar">
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </body>
+
+</body>
+</html>
