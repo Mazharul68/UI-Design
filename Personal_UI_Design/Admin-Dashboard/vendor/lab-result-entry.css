@@ -1,0 +1,53 @@
+.dropdown-menu { font-size: 13px;}
+    
+        .dropdown-menu {
+            font-family : 'courier new';
+            font-size: 16px;
+            width:90%;
+            cursor:hand;
+            max-height: 300px;
+            overflow: auto;
+            padding:5px;
+        }
+    
+        .dropdown-menu a:hover{
+            font-weight:bold;
+            font-size: 16px;
+            background:#eee;
+            width:90%;
+            max-height: 300px;
+        }  
+    
+        .form-control,
+        .form-select {
+            height: 28px;
+            font-size: 14px;
+        }
+        .form-select, input[type="date"] {
+            cursor: pointer;
+        }
+    
+        .profile-icon-m {
+            display: none;
+        }
+    
+        @media screen and (max-width:991px) {
+    
+            .profile-icon {
+                display: none;
+            }
+    
+            .profile-icon-m {
+                display: block;
+            }
+    
+            .responsive-padding{
+                /* padding-top: 15px; */
+                margin-top: 30px;
+            }
+    
+            .col-form-label{
+                text-align: left;
+            }
+    
+        }
