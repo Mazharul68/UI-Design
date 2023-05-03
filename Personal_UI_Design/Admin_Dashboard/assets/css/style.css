@@ -472,12 +472,13 @@ body{
 
 .user_settings{
     position: absolute;
+    content: '';
     right: 10px;
     top: 60px;
     background: var(--bgColor);
     width: 0;
     height: 0;
-    /* transition: 0.2s; */
+    transition: 0.2s;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -493,7 +494,7 @@ body{
 }
 .user_settings.active{
     width: 300px;
-    height: 250px;
+    height: 300px;
 }
 .user_settings ul li .btn{
     text-align: center;
