@@ -52,7 +52,7 @@ $(document).ready(function() {
     menuDropdowns = function(){
         $('.nav_item').each(function(){
             const links = $(this).find('.dropdown_menu');
-            const plus = $(this).find('.plusFlex i');
+            const plus = $(this).find('.item i.fas');
             const h = links.height();
             
              links.css('height', '0');
