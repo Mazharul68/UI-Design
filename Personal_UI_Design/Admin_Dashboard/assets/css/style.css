@@ -1,28 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*{
+
+/* Common CSS Start*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-}
-ul li{
-    list-style-type: none;
+  }
   
-}
-a{
+  body {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: #666666;
+    text-rendering: optimizeLegibility;
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  
+  /* html {
+    font-size: 62.5%;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  } */
+  
+  ul li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  a{
     text-decoration: none !important;
 }
-p{
+  p{
     margin-bottom: 0 !important;
 }
+  /* Common CSS End*/
 :root{
     --bgColor: #17B794;
     --textColor :#fff;
+    --cardIcon : blue;
 }
 .dark-theme {
     --bgColor: #fff;
     --textColor :#17B792;
+    --cardIcon : #17B794;
 }
 body{
     min-height: 100vh;
@@ -366,12 +409,14 @@ body{
     right: 95px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #dark-btn {
     display: flex;
     margin-left: 15px;
     background: rgb(51, 46, 46);
     width: 45px;
+    height: 22px;
     padding: 2px 3px;
     transition: padding-left 0.5s, background 0.5s;
     cursor: pointer;
@@ -703,6 +748,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
+    padding: 0;
 	box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.7);
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -784,7 +830,7 @@ body{
 }
 .cardBox .card .iconBox{
     font-size: 40px;
-    color: var(--black2);
+    color: var(--cardIcon);
 }
 /* .cardBox .card:hover{
     background: var(--bgColor);
