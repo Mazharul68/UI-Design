@@ -79,6 +79,19 @@ body{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
+.navigation ul.navi_items li.nav_item i.fas {
+    position: absolute;
+    right: 0;
+    top: 58%;
+    width: 100%;
+    bottom: 0;
+    left: 87%;
+    transform:translate( 0, -50%) ;
+    -webkit-transform:translate( 0, -50%) ;
+    -moz-transform:translate( 0, -50%) ;
+    -ms-transform:translate( 0, -50%) ;
+    -o-transform:translate( 0, -50%) ;
+}
 .navigation ul.navi_items li.nav_item:hover,
 .navigation ul.navi_items li.nav_item.hovered
 {
@@ -167,7 +180,7 @@ body{
     width: 50px;
     background: transparent;
     bottom: -50px;
-    box-shadow:  35px -35px 0 10px var(--textColor);
+    box-shadow:  35px -31px 0 10px var(--textColor);
     pointer-events: none;
     border-radius: 50%;
     -webkit-border-radius: 50%;
