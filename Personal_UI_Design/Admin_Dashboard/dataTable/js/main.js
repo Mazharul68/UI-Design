@@ -19,10 +19,9 @@ $(document).ready(function() {
     e.preventDefault();
     $('.list-product-nav .list-product-subnav').slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
     e.stopPropagation();
-
-    var span = $(this).find('.fa-angle-down');
-    span.toggleClass('fa-angle-up');
-  });
+    var span = $(this).find('span.fas');
+    span.toggleClass('active');
+  }); 
   
 });
 
