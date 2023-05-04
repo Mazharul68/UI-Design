@@ -28,7 +28,10 @@ $(document).ready(function() {
         localStorage.setItem("theme", "light");
 
     }
-
+    $(".nav_item_list").click(function(){
+        $('.nav_item_list i').addClass('active').siblings().removeClass('active');
+    });
+    
 
     // toggle menu/navbar Scripts
     // $('.navigation ul.navi_items li.nav_item').on('click',function() {
@@ -52,7 +55,7 @@ $(document).ready(function() {
     menuDropdowns = function(){
         $('.nav_item').each(function(){
             const links = $(this).find('.dropdown_menu');
-            const plus = $(this).find('.item i.fas');
+            const plus = $(this).find(' i.fas');
             const h = links.height();
             
              links.css('height', '0');

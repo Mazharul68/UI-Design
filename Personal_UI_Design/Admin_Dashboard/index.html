@@ -16,112 +16,49 @@
 </head>
 <body>
     <div class="wrapper">
-      <div class="navigation" style="border-left-width: 0;">
-        <ul class="navi_items">
-            <li class="nav_item">
-                <a class="item" href="index.html">
-                    <span class="icon"><img height="60px" src="#" alt="Logo"></span>
-                    <span class="title">
-                        <div class="words">
-                            <span>A</span>
-                            <span>B</span>
-                            <span>C</span>
-                            <span>D</span>
-                          </div>
-                    </span>
-                </a>
-            </li>
-            <li class="nav_item ">
-                <a class="item" href="javascript://">
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <div class="plusFlex">
-                        <span class="title">Dashboard</span>
-                    </div>
-                    <div><i class="fas fa-plus"></i></div> 
-                </a>
-                <ul class="dropdown_menu" id="menu-90ba1a">
-                    <li>
-                        <a class="dropdown_item" href="blank.html">
-                            <!-- <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span> -->
-                            <span class="title">blank page</span>
-                        </a>
+        <div class="navigation" style="border-left-width: 0;">
+            <ul class="navi_items">
+                <li class="nav_item">
+                  <a class="item" href="index.html">
+                        <span class="icon"><img height="60px" src="assets/images/logo.png" alt=""></span>
+                        <span class="title">
+                            <div class="words">
+                                <span>A</span>
+                                <span>N</span>
+                                <span>G</span>
+                                <span>T</span>
+                              </div>
+                        </span>
+                    </a>
+                </li>
+                  <ul class="list list-unstyled list-product-nav">
+                    <li> 
+                      <a href="#" class="list-product-cat">
+                          <span class="icon"><ion-icon name="home-outline"></ion-icon></span> Dashboard 
+                          <!-- <ion-icon name="home-outline"></ion-icon> -->
+                          <span class="fas fa-angle-right"></span>
+                          </a>
+                      <ul class="list list-unstyled list-product-subnav">
+                        <li> <a href="index.html">Axis</a> </li>
+                        <li> <a href="#">Modulus</a> </li>
+                      </ul>
+                      <!-- /.list-product-subnav -->
                     </li>
-                </ul>
-                
-            </li>
-            
-            <li class="nav_item">
-                <a class="item" href="javascript://" >
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <div class="plusFlex">
-                        <span class="title">Products items</span>
-                    </div>
-                    <div><i class="fas fa-plus"></i></div> 
-                </a>
-                <ul class="dropdown_menu">
-                    <li>
-                        <a class="dropdown_item" href="data.table.html">
-                            <!-- <span class="icon"><ion-icon name="caret-forward-outline"></ion-icon></span> -->
-                            <span class="title">Data Table</span>
-                        </a>
+                    <li > 
+                      <a href="#" class="list-product-cat">
+                          <span class="icon"><ion-icon name="home-outline"></ion-icon></span> Products items 
+                          </a>
+                      <ul class="list list-unstyled list-product-subnav">
+                        <li> <a href="#">Axis</a> </li>
+                        <li> <a href="#">Modulus</a> </li>
+                      </ul>
+                      <!-- /.list-product-subnav -->
                     </li>
-                    <li>
-                        <a class="dropdown_item" href="data.table.one.html">
-                            <span class="title">Data Table Two</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown_item" href="form.html">
-                        <span class="title">Form</span></a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav_item">
-                <a class="item" href="#" >
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <div class="plusFlex">
-                        <span class="title">Pages</span>
-                    </div>
-                </a>
-            </li>
-            <!-- <li class="nav_item ">
-                <a class="item">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <span class="title">Customer</span>
-                </a>
-            </li>
-            <li class="nav_item ">
-                <a class="item" href="">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <span class="title">Message</span>
-                </a>
-            </li>
-            <li class="nav_item ">
-                <a class="item" href="">
-                    <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-                    <span class="title">Help</span>
-                </a>
-            </li>
-            <li class="nav_item ">
-                <a class="item" href="">
-                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                    <span class="title">Setting</span>
-                </a>
-            </li>
-            <li class="nav_item ">
-                <a class="item" href="">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <span class="title">Password</span>
-                </a>
-            </li>
-            <li class="nav_item ">
-                <a class="item" href="">
-                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                    <span class="title">Sign Out</span>
-                </a>
-            </li> -->
-        </ul>
-      </div>
+                  </ul>
+                  <!-- /.list-product-nav -->
+             
+            </ul>
+          </div>
       <!-- main Content   -->
      
       <div class="main">
@@ -414,6 +351,8 @@
         let main = document.querySelector('.main');
         let user = document.querySelector('.user');
         let userSettings = document.querySelector('.user_settings');
+        let listItem = document.querySelector('.list-product-cat');
+        let dropDrownIcon = document.querySelector('span.fas');
        
     
         toggle.onclick =function (){
@@ -431,17 +370,9 @@
         //     userSettings.classList.remove("userSettings");
         //     });
 
-        navItem.onclick = function(){
-            dropdownMenu.classList.toggle('active');
-            plusFlex.classList.toggle('active')
+        listItem.onclick = function(){
+            dropDrownIcon.classList.toggle('active');
         }
-         // toggle menu/navbar Scripts
-        $('.toggle').click(function() {
-
-        $('.main_menu').toggleClass("active");
-        $('.menu_section i').toggleClass("active");
-        });
-
     </script>
 </body>
 </html>
