@@ -17,47 +17,43 @@
 <body>
     <div class="wrapper">
         <div class="navigation" style="border-left-width: 0;">
-          <ul class="navi_items">
-              <li class="nav_item">
-                <a class="item" href="index.html">
-                      <span class="icon"><img height="60px" src="assets/images/logo.png" alt=""></span>
-                      <span class="title">
-                          <div class="words">
-                              <span>A</span>
-                              <span>N</span>
-                              <span>G</span>
-                              <span>T</span>
-                            </div>
-                      </span>
-                  </a>
-              </li>
-                <ul class="list list-unstyled list-product-nav">
-                  <li> 
-                    <a href="#" class="list-product-cat">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span> Dashboard 
-                        <!-- <ion-icon name="home-outline"></ion-icon> -->
-                        <span class="fas fa-angle-right"></span>
-                        </a>
-                    <ul class="list list-unstyled list-product-subnav">
-                      <li> <a href="index.html">Axis</a> </li>
-                      <li> <a href="#">Modulus</a> </li>
+            <ul class="navi_items">
+                <li class="nav_item">
+                  <a class="item" href="index.html">
+                        <span class="icon"><img height="60px" src="assets/images/logo.png" alt=""></span>
+                        <span class="title">
+                            <div class="words">
+                                <span>A</span>
+                                <span>N</span>
+                                <span>G</span>
+                                <span>T</span>
+                              </div>
+                        </span>
+                    </a>
+                </li>
+                <div id="accordian">
+                    <ul class="show-dropdown">
+                        <li>
+                            <a href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+                            <ul class="show-dropdown">
+                                <li><a href="blank.html">blank page</a></li>
+                                <li><a href="data.table.html">Data Table</a></li>
+                                <li><a href="data.table.one.html">Data Table</a></li>
+                                <li><a href="form.html">Form</a></li>
+                                <!-- <li>
+                                    <a href="javascript:void(0);">DrillDown (active)</a>
+                                    <ul class="show-dropdown">
+                                        <li><a href="javascript:void(0);">Today's tasks</a></li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                        </li>
                     </ul>
-                    <!-- /.list-product-subnav -->
-                  </li>
-                  <li > 
-                    <a href="#" class="list-product-cat">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span> Products items 
-                        </a>
-                    <ul class="list list-unstyled list-product-subnav">
-                      <li> <a href="#">Axis</a> </li>
-                      <li> <a href="#">Modulus</a> </li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                  </li>
-                </ul>
-                <!-- /.list-product-nav -->
-           
-          </ul>
+                </div>
+            </ul>
         </div>
       <!-- main Content   -->
       <div class="main">
