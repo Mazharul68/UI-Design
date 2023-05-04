@@ -58,14 +58,16 @@
 }
   /* Common CSS End*/
 :root{
-    --bgColor: #17B794;
+    --bgColor: #50a3a2;
     --textColor :#fff;
     --cardIcon : blue;
+    --gradientColor : #53e3a6;
 }
 .dark-theme {
     --bgColor: #fff;
     --textColor :#17B792;
     --cardIcon : #17B794;
+    --gradientColor : #fff;
 }
 
 .wrapper{
@@ -84,6 +86,8 @@
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    background: var(--bgColor);
+    background: linear-gradient(to bottom right, var(--bgColor) 0%, var(--gradientColor));
 }
 
 /* leftside styling */
@@ -96,7 +100,7 @@
   }
   .list-product-nav span{
     font-size: 1.75em;
-    color: #fff;
+    color: var(--textColor);
   }
   .list-product-nav a:hover,
   .list-product-nav a:focus {
@@ -106,7 +110,7 @@
     border-bottom: solid 1px #fff;
   } */
   .list-product-nav > li a.list-product-cat {
-	color: #fff;
+	color: var(--textColor);
 	padding: 13px 10px;
 	background-color: var(--bgColor);
 	display: flex;
@@ -117,7 +121,8 @@
     list-style: none;
     padding-left: 1rem;
     border-bottom: 1px solid #444;
-    border-bottom-left-radius: 30px;
+    background: var(--bgColor);
+    background: linear-gradient(to bottom right, var(--bgColor) 0%, var(--gradientColor));
     
 }
 .list-product-nav > li a.list-product-cat span.icon{
@@ -146,7 +151,7 @@ span.fas.active{
   .list-product-subnav {
     display: none;
     border-bottom: 1px solid #444;
-    border-bottom-left-radius: 30px;
+    /* border-bottom-left-radius: 30px; */
   }
   .list-product-subnav li a {
     color: #000;
@@ -384,12 +389,13 @@ span.fas.active{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--bgColor);
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    background: var(--bgColor);
+    background: linear-gradient(to bottom right, var(--bgColor) 0%, var(--gradientColor) 100%);
 }
 .toggle {
 	position: relative;
@@ -566,7 +572,8 @@ span.fas.active{
     right:-300px;
     top: 100%;
     /* width: 100%; */
-    background: #00b894;
+    background: var(--bgColor);
+    background: linear-gradient(to bottom right, var(--bgColor) 0%, var(--gradientColor) 100%);
     transition: 0.5s ease-in;
     -webkit-transition: 0.5s ease-in;
     -moz-transition: 0.5s ease-in;
@@ -628,10 +635,10 @@ span.fas.active{
 .user_settings ul .userName h3 {
 	padding-top: 20px;
 	padding-bottom: 20px;
-    font-weight: 800;
+	font-weight: 800;
 	padding-left: 10px;
-    text-shadow: 1px -3px 4px rgba(0,0,0,0.41);
-    color: var(--textColor);
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.41);
+	color: var(--textColor);
 }
 .user_settings ul .userName h3 span{
     font-size: 13px;
