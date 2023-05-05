@@ -773,6 +773,7 @@ i {
   }
   .breadcrumb_area .breadcrumb_area_item .iq_items a{
     font-size: 16px;
+    color: #2a17b7;
   }
   /* breadcrumb_area Style  End*/
   /* form_section_area Start Here*/
@@ -833,7 +834,8 @@ i {
     width: 100%;
     margin-top: 35px;
 }
-.form_section_area .inputBox input
+.form_section_area .inputBox input,
+.form_section_area .inputBox textarea
 {
     position: relative;
     width: 100%;
@@ -845,6 +847,9 @@ i {
     font-size: 1em;
     letter-spacing: 0.05em;
     z-index: 10;
+}
+.form_section_area .inputBox textarea{
+    padding: 10px 10px 10px; 
 }
 .form_section_area .inputBox span {
 	position: absolute;
@@ -860,8 +865,11 @@ i {
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
 }
+
 .form_section_area .inputBox input:valid ~ span,
-.form_section_area .inputBox input:focus ~ span{
+.form_section_area .inputBox input:focus ~ span,
+.form_section_area .inputBox textarea:focus ~ span
+{
     color: var(--texInput);
     font-size: 0.75em;
     transform:translateY(-34px);
@@ -888,37 +896,15 @@ i {
     -o-transition: 0.5s;
 }
 .form_section_area .inputBox input:valid ~ i,
-.form_section_area .inputBox input:focus ~ i{
+.form_section_area .inputBox input:focus ~ i,
+.form_section_area .inputBox textarea:focus ~ i{
    height: 44px;
 }
-.form_section_area .links{
-    display: flex;
-    justify-content: space-between;
-}
-.form_section_area .links .item{
-    margin: 10px 0;
-    font-size: 0.75em;
-    color: #8f8f8f;
-    text-decoration: none;
-}
-.form_section_area .links .item:hover,
-.form_section_area .links .item:nth-child(2)
+
+.form_section_area .inputBox textarea:valid ~ i,
+.form_section_area .inputBox textarea:focus ~ i
 {
-    color:#45f3ff;
-}
-.form_section_area .btn_login{
-    border:none;
-    background: #45f3ff;
-    padding: 11px 25px;
-    width: 100px;
-    margin-top: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    height: 100%  
 }
 
 @keyframes animate{
@@ -940,6 +926,155 @@ i {
 }
 
   /* form_section_area End Here*/
+  /* Check Box and Radio Button Styling Start Here */
+  .checkbox_styling label input {
+    display: none;
+}
+.checkbox_styling label .checkbox {
+    width: 20px;
+    height: 20px;
+    display: table;
+    border: 1px solid rgb(21, 1, 1);
+    position: relative;
+    cursor: pointer;
+    float: right;
+    background-color: white;
+}
+.checkbox_styling span.service-name {
+    float: left;
+    font-family: arial;
+    user-select: none;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 120%;
+
+} 
+
+.checkbox_styling label .checkbox .checkmark {
+    position: absolute;
+    font-size: 1000%;
+    left: -492%;
+      top: -1000%;
+    visibility: hidden;
+    border-radius: 100%;
+    font-weight: bold;
+    z-index: 999;
+   user-select: none;	
+
+}
+.checkbox_styling label input:checked ~ .checkbox .checkmark {
+    display: block;
+    font-size: 100%;
+    visibility: visible;
+    top: 0px;
+    left: 2px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.checkbox_styling {
+    
+    margin: 40px auto;
+    max-width: 30%;
+    min-width: 300px; 
+    border: 1px solid #fff945;
+    box-shadow: 0px 0px 1px silver;
+    overflow: auto;
+}
+.checkbox_styling h1 {
+    text-align: center;
+    font-family: arial;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 200%;
+    text-shadow: -1px 1px 2px black;
+    width: 100%;
+    border-bottom: 1px solid #ffc800;
+    padding-bottom: 10px;
+    margin: 0px;
+    margin-top: 10px;
+
+}
+.checkbox_styling label {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0px;
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid #ffc800;
+    position: relative;
+    overflow: hidden;
+    
+}
+.checkbox_styling label:last-child {
+    border-bottom: none;
+}
+.checkbox_styling label .animation-hover {
+    width: 150px;
+    height: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: white;
+    opacity: 0.4;
+    top: 20px;
+    left: -150px;
+}
+.checkbox_styling label:hover .animation-hover {
+    left: 100%;
+    transition: 0.7s;
+}
+/* ////// */
+           [type="radio"]:checked,
+   [type="radio"]:not(:checked) {
+       position: absolute;
+       left: -9999px;
+   }
+   [type="radio"]:checked + label,
+   [type="radio"]:not(:checked) + label
+   {
+       position: relative;
+       padding-left: 28px;
+       cursor: pointer;
+       line-height: 20px;
+       display: inline-block;
+       color: #666;
+   }
+   [type="radio"]:checked + label:before,
+   [type="radio"]:not(:checked) + label:before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 18px;
+       height: 18px;
+       border: 1px solid #ddd;
+       border-radius: 100%;
+       background: #fff;
+   }
+   [type="radio"]:checked + label:after,
+   [type="radio"]:not(:checked) + label:after {
+       content: '';
+       width: 12px;
+       height: 12px;
+       background: #F87DA9;
+       position: absolute;
+       top: 4px;
+       left: 4px;
+       border-radius: 100%;
+       -webkit-transition: all 0.2s ease;
+       transition: all 0.2s ease;
+   }
+   [type="radio"]:not(:checked) + label:after {
+       opacity: 0;
+       -webkit-transform: scale(0);
+       transform: scale(0);
+   }
+   [type="radio"]:checked + label:after {
+       opacity: 1;
+       -webkit-transform: scale(1);
+       transform: scale(1);
+   }
+  /* Check Box and Radio Button Styling End Here */
+
   
   @keyframes move {
     0% {
@@ -1274,125 +1409,6 @@ i {
 }
 
 
- /* New Form Design Css Style Start*/
- .login_form{
-    width: 100%;
-    display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    gap: 20px;
-    padding-top: 20px;
-}
-.login_form .inputBox_description{
-    grid-column: 1/-1;
-}
-.login_form .inputBox{
-    position: relative;
-    width: 100%;
-}
-.login_form .inputBox input,
-.login_form .inputBox textarea
-{
-    position: relative;
-    width: 100%;
-    padding: 20px 10px 10px;
-    background: transparent;
-    border: none;
-    outline: none;
-    color:var(--textColor);
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    z-index: 10;
-}
-.login_form .inputBox textarea{
-    padding: 10px 10px 10px; 
-}
-.login_form .inputBox span{
-    position: absolute;
-    left: 0;
-    padding: 20px 0px 10px;
-    font-size:  1em;
-    color: var(--bgColor);
-    pointer-events: none;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-.login_form .inputBox input:valid ~ span,
-.login_form .inputBox input:focus ~ span,
-.login_form .inputBox textarea:focus ~ span
-{
-    color: #45f3ff;
-    color:var(--bgColor);
-    font-size: 0.75em;
-    transform:translateY(-34px);
-    -webkit-transform:translateY(-34px);
-    -moz-transform:translateY(-34px);
-    -ms-transform:translateY(-34px);
-    -o-transform:translateY(-34px);
-}
-.login_form .inputBox i{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    z-index: 9;
-    background: 4px;
-    transition: 0.5s;
-    pointer-events: none;
-    background: #45f3ff;
-    background: var(--bgColor);
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-.login_form .inputBox input:valid ~ i,
-.login_form .inputBox input:focus ~ i, 
-.login_form .inputBox textarea:focus ~ i
-{
-   height: 44px;
-}
-.login_form .inputBox textarea:valid ~ i,
-.login_form .inputBox textarea:focus ~ i
-{
-    height: 100%  
-}
-.login_box .links{
-    display: flex;
-    justify-content: space-between;
-}
-.login_box .links .item{
-    margin: 10px 0;
-    font-size: 0.75em;
-    color: #8f8f8f;
-    text-decoration: none;
-}
-.login_box .links .item:hover,
-.login_box .links .item:nth-child(2)
-{
-    color:#45f3ff;
-}
-.login_box .btn_login {
-	border: none;
-	background: var(--bgColor);
-	color: var(--textColor);
-	padding: 11px 25px;
-	width: 100px;
-	margin-top: 10px;
-	font-weight: 600;
-	cursor: pointer;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-}
  /* New Form Design Css Style End*/
 
  @media screen and (max-width:1060px){
