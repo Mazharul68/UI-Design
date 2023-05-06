@@ -900,6 +900,9 @@ i {
 .form_section_area .inputBox textarea:focus ~ i{
    height: 44px;
 }
+.form_section_area .inputBox input[type='file'] ~ i{
+    height: 44px; 
+}
 
 .form_section_area .inputBox textarea:valid ~ i,
 .form_section_area .inputBox textarea:focus ~ i
@@ -1396,6 +1399,12 @@ i {
     color: var(--textColor);
 }
 
+/* ///////Solial Links Area */
+.solial_links_area ul li a{
+    padding: 7px 0;
+    display: block
+}
+
 
   /* Footer Section */
   .dashboard_footer_section {
@@ -1453,6 +1462,32 @@ i {
         left: 45px;
     }
 }
+/* Profile Styling Start */
+.profile_cover{
+    position: relative;
+}
+.profile_cover .profile_logo img{
+    max-width: 100px;
+    object-fit: cover;
+    height: 100px;
+    border-radius: 100%;
+}
+.profile_cover .profile_logo {
+position: absolute;
+bottom: -25px;
+}
+.profile_cover  h3
+{
+    position: absolute;
+    padding-top: 20px;
+    color: var(--texInput)
+}
+.profile_cover  span{
+    position: absolute;
+    padding-top: 45px;
+    color: var(--texInput)
+}
+/* Profile Styling End */
 
 
 @media screen and (max-width:768px){
