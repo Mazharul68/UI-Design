@@ -1,0 +1,63 @@
+/* /////////////////// */
+/* Common CSS Start*/
+/* /////////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #333;
+    text-rendering: optimizeLegibility;
+   }
+   :root{
+     --primary-color:#047aed;
+   }
+    ul li {
+      list-style: none; 
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    h1,
+    h2{
+      font-weight: 300;
+      line-height: 1.2;
+      margin: 10px 0;
+    }
+    p{
+      margin: 10px 0;
+    }
+    img{
+      width: 100%;
+    }
+    a:hover {
+      text-decoration: none; }
+    ul {
+      margin: 0;
+      padding: 0; 
+    }
+   
+   /* /////////////////// */
+    /* Common CSS End*/
+  /* /////////////////// */
+  /* Navbar Start Styling */
+
+.top_bar_side{
+    display: flex;
+    justify-content: space-around;
+    background: #50a3a2;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  }
+  .top_bar_side ul li{
+    display: inline;
+  }
