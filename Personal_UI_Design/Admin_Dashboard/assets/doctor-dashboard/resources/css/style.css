@@ -52,12 +52,26 @@
   /* /////////////////// */
   /* Navbar Start Styling */
 
-.top_bar_side{
+nav.top_header .top_bar_side{
     display: flex;
     justify-content: space-around;
     background: #50a3a2;
     background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
   }
-  .top_bar_side ul li{
+nav.top_header .top_bar_side ul li{
     display: inline;
   }
+  nav.top_header .top_bar_side ul li a{
+    padding: 7px 5px;
+    display: inline-block;
+    color:#fff;
+    border-left: 1px dotted #fff;
+  }
+  nav.top_header .top_bar_side ul li:last-child{
+    border-right: 1px dotted #fff;
+    display: inline-block;
+  }
+  
+
+
+
