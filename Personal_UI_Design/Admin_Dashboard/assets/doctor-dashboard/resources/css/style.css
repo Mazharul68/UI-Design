@@ -46,7 +46,20 @@
       margin: 0;
       padding: 0; 
     }
-   
+    .layout-page {
+      position: relative;
+      background: rgb(243, 243, 243);
+    }
+    .layout-page #page-boxed {
+      background: #ffffff; 
+    }
+    .wrapper {
+      max-width: 1513px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      overflow: hidden;
+      margin: 0 auto;
+    }
    /* /////////////////// */
     /* Common CSS End*/
   /* /////////////////// */
@@ -54,7 +67,7 @@
 
 nav.top_header .top_bar_side{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #50a3a2;
     background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
   }
@@ -63,13 +76,18 @@ nav.top_header .top_bar_side ul li{
   }
   nav.top_header .top_bar_side ul li a{
     padding: 7px 5px;
-    display: inline-block;
+    display: inline-flex;
     color:#fff;
     border-left: 1px dotted #fff;
+    font-weight: 600;
   }
   nav.top_header .top_bar_side ul li:last-child{
     border-right: 1px dotted #fff;
     display: inline-block;
+  }
+  nav.top_header ul li a i{
+    font-size: 25px;
+    font-weight: bold;
   }
   
 
