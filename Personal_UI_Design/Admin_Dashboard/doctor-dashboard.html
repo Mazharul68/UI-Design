@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/style.css">
-    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/responsive.css">
-        <!-- font Awesome  6.4-->
-        <link rel="stylesheet" href="css/fontawesome.css">     
+    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/responsive.css">   
     <title>Doctor Dashboard</title>
 </head>
 <body class="layout-page">
@@ -16,24 +14,58 @@
         <nav class="top_header">
             <div class="top_bar_side">
                 <ul>
-                    <li><a href="">Patients</a></li>
-                    <li><a href="">New Patient <i class="fa-sharp fa-light fa-plus"></i></a></li>
-                    <li><a href="">Appointments</a></li>
-                    <li><a href="">Old Rx</a></li>
-                    <li><a href="">New Rx <i class="fa-sharp fa-light fa-plus"></i></a></li>
+                    <li><a class="iq_items" href=""><i class="fa fa-home"></i> home</a></li>
+                    <li><a class="iq_items" href="">Patients</a></li>
+                    <li><a class="iq_items" href="">New Patient <i class="fa fa-plus"></i></a></li>
+                    <li><a class="iq_items" href="">Appointments</a></li>
+                    <li><a class="iq_items" href="">Old Rx</a></li>
+                    <li><a class="iq_items" href="">New Rx <i class="fa fa-plus"></i></a></li>
                     <li>
-                        <a href="">More</a>
+                        <a class="iq_items" href="">More</a>
                         <ul class="dropdown_sub_menu">
-                            <li><a href="">Appointment Configuration</a></li>
-                            <li><a href="">Account Preference</a></li>
-                            <li><a href="">Reports</a></li>
-                            <li><a href="">Sync Data Cache </a></li>
+                            <li><a class="iq_items" href="">Appointment Configuration</a></li>
+                            <li><a class="iq_items" href="">Account Preference</a></li>
+                            <li><a class="iq_items" href="">Reports</a></li>
+                            <li><a class="iq_items" href="">Sync Data Cache </a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul>
-                    <li><a href="">profile</a></li>
-                    <li><a href="">Name</a></li>
+                    <li><a href="">Md Mazharul Islam</a></li>
+                    <li>
+                        <a id="user" href="#" ><img class="user_image" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="img"></a>
+                        <div class="user_settings">
+                            <ul>
+                                    <div class="userName"  href="">
+                                        <h3>Md Mazharul Islam <br> <span>Available</span></h3>
+                                    </div>
+                                <li>
+                                    <a class="userItem"  href="">
+                                        <ion-icon name="person-add-outline"></ion-icon>
+                                        <div>
+                                            <strong>My Profile</strong>
+                                            <span>View Personal profile details</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="userItem" href="">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                    <div>
+                                        <strong>Settings</strong>
+                                        <span>Modify your personal details</span>
+                                    </div>
+                                    </a>
+                                   
+                                </li>
+                                <li>
+                                    <div class="btn">
+                                        <button type="submit"><ion-icon name="log-out-outline"></ion-icon><strong>Sign out</strong></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -42,5 +74,15 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="assets/resources/js/poperjs.js"></script>
     <script src="assets/resources/js/bootstrap.min.js"></script> 
+    <script src="https://kit.fontawesome.com/042b6d566d.js" crossorigin="anonymous"></script>
+
+    <script>
+        let user = document.querySelector('#user');
+        let userSettings = document.querySelector('.user_settings');
+       
+        user.onclick = function(){;
+            userSettings.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

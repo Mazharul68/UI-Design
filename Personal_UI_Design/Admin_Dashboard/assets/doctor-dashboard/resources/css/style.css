@@ -70,6 +70,8 @@ nav.top_header .top_bar_side{
     justify-content: space-between;
     background: #50a3a2;
     background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    align-items: center;
+    position: relative;
   }
 nav.top_header .top_bar_side ul li{
     display: inline;
@@ -77,27 +79,28 @@ nav.top_header .top_bar_side ul li{
   }
 
   
-  nav.top_header .top_bar_side ul li a{
+  nav.top_header .top_bar_side ul li .iq_items{
     padding: 7px 5px;
-    display: inline-flex;
+    display: inline-block;
     color:#fff;
     border-left: 1px dotted #fff;
     font-weight: 600;
+  }
+  nav.top_header ul li .iq_items i{
+    font-size: 17px;
+    font-weight: bold;
   }
   nav.top_header .top_bar_side ul li:last-child{
     border-right: 1px dotted #fff;
     display: inline-block;
   }
-  nav.top_header ul li a i{
-    font-size: 25px;
-    font-weight: bold;
-  }
+
 
   .dropdown_sub_menu{
     position: absolute;
     width: 300px;
     height: max-content;
-    top: 40px;
+    /* top: 40px; */
     left: 0;
     background: #50a3a2;
     background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
@@ -136,6 +139,130 @@ nav.top_header .top_bar_side ul li{
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
   }
+  /* //////////////////////////  Right Site /////////////////////////*/
+  
+  nav.top_header .top_bar_side .user_image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.top_bar_side .user_settings{
+  border-top: 1px solid;
+  position: absolute;
+  display: block;
+  right:-640px;
+  top: 100%;
+  /* width: 100%; */
+  background: #52a5a4; 
+  background: linear-gradient(to bottom right, #52a5a4 0%, #53e5a7 100%);
+  /* transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in; */
+  
+}
+.user_settings.active{
+  top: 54px;
+  right:0;
+}
+.user_settings ul li .btn{
+  text-align: center;
+  padding: 10px;
+}
+.user_settings ul li .btn button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: #fcecec;
+  color: #e64141;
+  font-size: 17px;
+  font-weight: 500;
+  transition: .5s;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.user_settings ul li .btn button:hover{
+ background: #e64141;
+ color: #fff;
+ cursor: pointer;
+ transform:translateX(3px);
+ -webkit-transform:translateX(3px);
+ -moz-transform:translateX(3px);
+ -ms-transform:translateX(3px);
+ -o-transform:translateX(3px);
+}
+.user_settings ul li .btn button ion-icon{
+  padding-right: 5px;
+  position: relative;
+  top: 3px;
+
+}
+
+.user_settings ul li {
+width: 300px;
+
+}
+.user_settings ul .userName h3 {
+padding-top: 20px;
+padding-bottom: 20px;
+font-weight: 800;
+padding-left: 10px;
+text-shadow: 0px 0px 0px rgba(0,0,0,0.41);
+color: var(--textColor);
+}
+.user_settings ul .userName h3 span{
+  font-size: 13px;
+  font-weight: inherit;
+}
+.user_settings ul li span{
+  font-size: 10px;
+  display: block;
+  color: red;
+}
+.user_settings ul li .userItem {
+  display: block;
+  padding: 10px;
+  align-items: center;
+  color: red;
+  font-weight: 500;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+.user_settings ul li .userItem ion-icon {
+padding-right: 18px;
+font-size: 23px;
+
+}
+
+.user_settings ul li:hover .userItem, 
+.user_settings ul li:hover span {
+color: red;
+background: red;
+transform: translateX(2px);
+-webkit-transform: translateX(2px);
+-moz-transform: translateX(2px);
+-ms-transform: translateX(2px);
+-o-transform: translateX(2px);
+}
+.user_settings ul li:hover span{
+  background: transparent;
+}
   
 
 

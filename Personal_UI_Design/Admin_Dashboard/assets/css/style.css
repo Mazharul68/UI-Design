@@ -633,11 +633,9 @@ i {
     
 }
 .user_settings.active{
-
     top: 60px;
     right: 0;
     z-index: 0;
-
 }
 .user_settings ul li .btn{
     text-align: center;
