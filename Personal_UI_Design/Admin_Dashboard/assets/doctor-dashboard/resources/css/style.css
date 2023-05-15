@@ -77,14 +77,15 @@ nav.top_header .top_bar_side ul li{
     display: inline;
     position: relative;
   }
-
-  
   nav.top_header .top_bar_side ul li .iq_items{
     padding: 7px 5px;
     display: inline-block;
     color:#fff;
     border-left: 1px dotted #fff;
     font-weight: 600;
+  }
+  nav.top_header .top_bar_side ul li .iq_items:hover{
+    color:#333;
   }
   nav.top_header ul li .iq_items i{
     font-size: 17px;
@@ -168,7 +169,7 @@ nav.top_header .top_bar_side ul li{
   
 }
 .user_settings.active{
-  top: 54px;
+  top: 40px;
   right:0;
 }
 .user_settings ul li .btn{
@@ -221,7 +222,7 @@ padding-bottom: 20px;
 font-weight: 800;
 padding-left: 10px;
 text-shadow: 0px 0px 0px rgba(0,0,0,0.41);
-color: var(--textColor);
+color:#fff;
 }
 .user_settings ul .userName h3 span{
   font-size: 13px;
@@ -230,13 +231,13 @@ color: var(--textColor);
 .user_settings ul li span{
   font-size: 10px;
   display: block;
-  color: red;
+  color: #fff;
 }
 .user_settings ul li .userItem {
-  display: block;
+  display: flex;
   padding: 10px;
   align-items: center;
-  color: red;
+  color: #fff;
   font-weight: 500;
   transition: 0.1s;
   -webkit-transition: 0.1s;
@@ -247,19 +248,23 @@ color: var(--textColor);
 .user_settings ul li .userItem ion-icon {
 padding-right: 18px;
 font-size: 23px;
+color: #fff;
 
 }
 
 .user_settings ul li:hover .userItem, 
-.user_settings ul li:hover span {
-color: red;
-background: red;
+.user_settings ul li:hover span,
+.user_settings ul li .userItem:hover ion-icon
+ {
+color: #4fa3a2;
+background: #fff;
 transform: translateX(2px);
 -webkit-transform: translateX(2px);
 -moz-transform: translateX(2px);
 -ms-transform: translateX(2px);
 -o-transform: translateX(2px);
 }
+
 .user_settings ul li:hover span{
   background: transparent;
 }
