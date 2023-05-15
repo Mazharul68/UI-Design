@@ -139,6 +139,7 @@ nav.top_header .top_bar_side ul li{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    z-index: 99;
     }
   
     .dropdown_sub_menu li{
@@ -294,7 +295,27 @@ transform: translateX(2px);
   }
   .welcome_section .welcome_content h2 strong{
     font-weight: bold;
-  
+  }
+  .doctor_info_section .card-header{
+    background: #4aefed; 
+    color:#000;
+
+  }
+  .doctor_info_section .card-body h5{
+    color: #d11062; 
+    font-weight: bold;
+  }
+  .doctor_info_section .card-body p{
+    font-size: 14px;
+  }
+  .doctor_info_section .list-group{
+    border-bottom: 1px solid #52a5a4;
+  }
+  /* .doctor_info_section .list-group:last-child{
+    border-bottom: 1px solid #52a5a4;
+  } */
+  .doctor_info_section .card{
+    border: 1px solid #52a5a4;
   }
   
 
