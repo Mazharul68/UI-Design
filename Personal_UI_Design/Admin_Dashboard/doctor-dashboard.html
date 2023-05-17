@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/style.css">
     <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/responsive.css">
     <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/style.scss">  
-     
+    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/chart.css"> 
+    <!-- bar Chart -->
+    <script src='https://unpkg.com/d3@3.5.16/d3.js'></script>
+    <script src='https://unpkg.com/moment@2.18.1/moment.js'></script>
+    <script  src="assets/doctor-dashboard/resources/js/chart.js"></script>
     <title>Doctor Dashboard</title>
 </head>
 <body class="layout-page">
@@ -146,7 +150,6 @@
                               </div>
                         </div>
                     </div>
-           
                     <div class="calendar-section">
                         <div class="row">
                             <div class="col-lg-6">
@@ -176,7 +179,7 @@
                                   </div>
                             </div>
                             <div class="col-lg-6">
-                                <div id="bar-chart" class="bar-chart"></div>
+                              <div id="bar-chart" class="bar-chart"></div>
                             </div>
                         </div> <!-- End Row -->
                     </div> <!-- End Calendar -->
@@ -220,6 +223,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="assets/doctor-dashboard/resources/js/main.js"></script>
+
+
+  
 
     <script>
         let user = document.querySelector('#user');

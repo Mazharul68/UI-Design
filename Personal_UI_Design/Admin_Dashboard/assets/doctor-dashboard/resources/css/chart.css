@@ -1,0 +1,87 @@
+
+  .bar-chart {
+    font-size: 12px;
+    line-height: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+  }
+  
+  .bar-chart .axis path,
+  .bar-chart .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+  }
+  
+  .bar-chart .axis text {
+    fill: #ccc;
+  }
+  
+  .bar-chart .bar {
+    fill: #292b57;
+  }
+  
+  .bar-chart .bar:hover {
+    fill: #e63e00;
+  }
+  
+  .bar-chart .prev-bar {
+    fill: #ff7d4d;
+    shape-rendering: crispEdges;
+    pointer-events: none;
+  }
+  
+  .bar-chart .bar-label {
+    fill: #e63e00;
+    pointer-events: none;
+  }
+  
+  .bar-chart .prev-bar-label {
+    fill: #ff7d4d;
+    pointer-events: none;
+  }
+  
+  .bar-chart .mode-button text {
+    fill: #000;
+    font-size: 19px;
+    cursor: pointer;
+  }
+  
+  .bar-chart .mode-button rect {
+    fill: none;
+    cursor: pointer;
+  }
+  
+  .bar-chart .mode-button.active rect {
+    stroke: #ff4500;
+    stroke-width: 1px;
+  }
+  
+  .bar-chart .mode-button:hover rect {
+    fill: #4aefed;
+  }
+  
+  .bar-chart .mode-button:hover text {
+    fill: #1d1f20;
+  }
+  
+  .bar-chart .controls .button-prev,
+  .bar-chart .controls .button-next {
+    fill: #ccc;
+    cursor: pointer;
+  }
+  
+  .bar-chart .controls .button-prev:hover,
+  .bar-chart .controls .button-next:hover {
+    fill: #ff4500;
+  }
+  
+  .bar-chart .control-label {
+    fill: #000;
+    font-size: 2.5em;
+  }
