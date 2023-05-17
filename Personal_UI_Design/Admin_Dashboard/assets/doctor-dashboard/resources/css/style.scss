@@ -1,0 +1,95 @@
+$textColor: #ccc;
+$chartColor: #ff4500;
+$backgroundColor: #1d1f20;
+
+*, :after, :before {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: $backgroundColor;
+}
+
+.bar-chart {
+  font-size: 12px;
+  line-height: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.bar-chart .axis path,
+.bar-chart .axis line {
+  fill: none;
+  stroke: $textColor;
+  shape-rendering: crispEdges;
+}
+
+.bar-chart .axis text {
+  fill: $textColor;
+}
+
+// Bar chart
+.bar-chart .bar {
+  fill: $chartColor;
+}
+.bar-chart .bar:hover {
+  fill: darken($chartColor, 5%);
+}
+.bar-chart .prev-bar {
+  fill: lighten($chartColor, 15%);
+  shape-rendering: crispEdges;
+  pointer-events: none;
+}
+
+// Bar chart labels
+.bar-chart .bar-label {
+  fill: darken($chartColor, 5%);
+  pointer-events: none;
+}
+.bar-chart .prev-bar-label {
+  fill: lighten($chartColor, 15%);
+  pointer-events: none;
+}
+
+// Mode buttons
+.bar-chart .mode-button text {
+  fill: $textColor;
+  font-size: 12px;
+  cursor: pointer;
+}
+.bar-chart .mode-button rect {
+  fill: none;
+  cursor: pointer;
+}
+.bar-chart .mode-button.active rect {
+  stroke: $chartColor;
+  stroke-width: 1px;
+}
+.bar-chart .mode-button:hover rect {
+  fill: $chartColor;
+}
+.bar-chart .mode-button:hover text {
+  fill: $backgroundColor;
+}
+
+// Control buttons
+.bar-chart .controls .button-prev,
+.bar-chart .controls .button-next {
+  fill: $textColor;
+  cursor: pointer;
+}
+.bar-chart .controls .button-prev:hover,
+.bar-chart .controls .button-next:hover {
+  fill: $chartColor;
+}
+
+.bar-chart .control-label {
+  fill: $textColor;
+  font-size: 2.5em;
+}
