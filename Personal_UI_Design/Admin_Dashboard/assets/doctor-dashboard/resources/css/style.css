@@ -425,7 +425,7 @@ transform: translateX(2px);
   }
   
   button.switch-month:hover {
-    color: #5EADE2;
+    color: #fff;
   }
   button.switch-month:active {
     background-color: rgba(113, 113, 125, .4);
@@ -436,6 +436,14 @@ transform: translateX(2px);
   }
   /* ////////////////////Calender Style End */
   
-
+  .dashboard_footer_section {
+    padding: 5px 10px;
+    color: #fff;
+    font-size: smaller;
+    text-align: center;
+    margin-top: 15px;
+    background: #50a3a2;
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);;
+  }
 
 
