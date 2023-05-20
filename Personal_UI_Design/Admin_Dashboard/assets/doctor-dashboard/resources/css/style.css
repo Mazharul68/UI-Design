@@ -466,6 +466,36 @@ transform: translateX(2px);
     background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
   }
 
+  .user_image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.export_table .preview_style {
+	background: #17B794;
+	color: #fff;
+	padding: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.export_table .preview_style:hover{
+  background: #fff;
+  color: #17B794;
+}
+.export_table tr td strong{
+  color: #17B794;
+}
+.export_table tr td blockquote{
+  margin: unset;
+  margin-top: unset;
+  margin-top: 10px;
+}
+
 
 
 
