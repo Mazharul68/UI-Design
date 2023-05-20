@@ -445,5 +445,27 @@ transform: translateX(2px);
     background: #50a3a2;
   background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);;
   }
+  .main_content_area .my_patients{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items:center;
+    align-items: center;
+    color: #000;
+  }
+  .main_content_area .my_patients strong{
+    font-weight: bolder;
+  }
+
+  .main_content_area .my_patients a{
+    color: #fff;
+    background: #0426AC;
+    padding: 5px;
+    font-weight: 900;
+    background: #50a3a2;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  }
+
+
 
 

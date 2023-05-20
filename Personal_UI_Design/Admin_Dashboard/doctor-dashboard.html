@@ -19,7 +19,7 @@
             <div class="top_bar_side">
                 <ul>
                     <li><a class="iq_items" href=""><i class="fa fa-home"></i> home</a></li>
-                    <li><a class="iq_items" href="">Patients</a></li>
+                    <li><a class="iq_items" href="patients.html">Patients</a></li>
                     <li><a class="iq_items" href="">New Patient <i class="fa fa-plus"></i></a></li>
                     <li><a class="iq_items" href="">Appointments</a></li>
                     <li><a class="iq_items" href="">Old Rx</a></li>
@@ -78,7 +78,7 @@
         <section class="welcome_section">
             <div class="welcome_content">
                 <h2>Welcome <strong>Md Mazharul Islam</strong></h2>
-                <a class="btn_style" href=""><i class="fa fa-comment"></i> Feedback</a>
+                <a class="btn_style" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-comment"></i> Feedback</a>
             </div>
         </section>
         <!-- welcome_section End -->
@@ -221,8 +221,39 @@
           </div>
         </section>
         <!-- footer Section End-->
-
     </main>
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+<style>
+  .form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #f5f6f7;
+	outline: 0;
+	box-shadow: 0 0 0 1px green;
+}
+</style>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Send Feedback</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <textarea class="form-control" name="" id="" cols="20" rows="6" placeholder="Your Feedback"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="assets/resources/js/poperjs.js"></script>
     <script src="assets/resources/js/bootstrap.min.js"></script> 

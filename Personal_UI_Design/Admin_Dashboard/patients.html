@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/style.css">
+    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/responsive.css">
+    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/style.scss">  
+    <link rel="stylesheet" href="assets/doctor-dashboard/resources/css/chart.css"> 
+
+
+           <!-- Data Table CSS Start -->
+           <link rel="stylesheet" href="dataTable/css/themes-base-jquery-ui.css">
+           <link rel="stylesheet" href="dataTable/css/dataTables.jqueryud.min.css">
+           <link rel="stylesheet" href="dataTable/css/dataTables.button.css">
+           <link rel="stylesheet" href="dataTable/css/syle.css">
+         <!-- Data Table CSS  End-->
+
+    <title>Doctor Dashboard</title>
+</head>
+<body class="layout-page">
+    <main id="page-boxed" class="wrapper">
+        <!-- header top bar section Start -->
+        <nav class="top_header">
+            <div class="top_bar_side">
+                <ul>
+                    <li><a class="iq_items" href=""><i class="fa fa-home"></i> home</a></li>
+                    <li><a class="iq_items" href="patients.html">Patients</a></li>
+                    <li><a class="iq_items" href="">New Patient <i class="fa fa-plus"></i></a></li>
+                    <li><a class="iq_items" href="">Appointments</a></li>
+                    <li><a class="iq_items" href="">Old Rx</a></li>
+                    <li><a class="iq_items" href="">New Rx <i class="fa fa-plus"></i></a></li>
+                    <li>
+                        <a class="iq_items" href="">More</a>
+                        <ul class="dropdown_sub_menu">
+                            <li><a class="iq_items" href="">Appointment Configuration</a></li>
+                            <li><a class="iq_items" href="">Account Preference</a></li>
+                            <li><a class="iq_items" href="">Reports</a></li>
+                            <li><a class="iq_items" href="">Sync Data Cache </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a class="iq_items" href="">Md Mazharul Islam</a></li>
+                    <li>
+                        <a id="user" href="#" ><img class="user_image" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="img"></a>
+                        <div class="user_settings">
+                            <ul>
+                                    <div class="userName"  href="">
+                                        <h3>Md Mazharul Islam</h3>
+                                    </div>
+                                <li>
+                                    <a class="userItem"  href="">
+                                        <ion-icon class="fa fa-user"></ion-icon>
+                                        <div>
+                                            <strong>My Profile</strong>
+                                            <span>View Personal profile details</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="userItem" href="">
+                                    <ion-icon class="fa fa-cog"></ion-icon>
+                                    <div>
+                                        <strong>Settings</strong>
+                                        <span>Modify your personal details</span>
+                                    </div>
+                                    </a>
+                                   
+                                </li>
+                                <li>
+                                    <div class="btn">
+                                        <button type="submit"><ion-icon name="log-out-outline"></ion-icon><strong>Sign out</strong></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- header top bar section End -->
+            <!-- Main Content Start -->
+            <div class="main_content_area">
+                <div class="my_patients mt-3">
+                    <h2 >My <strong style="font-weight:bold;">Patients</strong></h2>
+                    <a href=""><i class="fa fa-plus"></i> New Patient</a>
+                </div>
+                
+                <table id="example" class="display export_table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Patient Id</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                            <!-- <th colspan="2">Action</th>
+                            <th colspan="2">Action</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Md Mazharul Islam</td>
+                            <td>8765445</td>
+                            <td>Male</td>
+                            <td>32</td>
+                            <td>01716448665</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>Emon Ahmed</td>
+                            <td>8765345</td>
+                            <td>Male</td>
+                            <td>33</td>
+                            <td>8765423435</td>
+                            <td>
+                                <a title="" style="background-color:#17B794; color: #fff; padding: 5px;" href=""><ion-icon class="fas fa-eye"></ion-icon> View</a>
+                                <a title="" style="background-color:#bab70c; color: #fff; padding: 5px;" href=""><ion-icon class="fa fa-plus"></ion-icon> Create Prescription</a>
+                            </td>
+                        </tr>           
+                    </tfoot>
+                </table>
+            </div>
+        <!-- Main Content End -->
+        <!-- footer Section Start-->
+        <section >
+          <div class="row">
+            <div class="col">
+              <footer class="dashboard_footer_section">
+                <p>Copyright © 2023 ANGT. Designed by ANGT Developer team</p>
+            </footer>
+            </div>
+          </div>
+        </section>
+        <!-- footer Section End-->
+    </main>
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+<style>
+  .form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #f5f6f7;
+	outline: 0;
+	box-shadow: 0 0 0 1px green;
+}
+</style>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Send Feedback</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <textarea class="form-control" name="" id="" cols="20" rows="6" placeholder="Your Feedback"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="assets/resources/js/poperjs.js"></script>
+    <script src="assets/resources/js/bootstrap.min.js"></script> 
+    <script src="assets/resources/js/kit.fontawesome.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script src="assets/doctor-dashboard/resources/js/main.js"></script>
+        <!-- bar Chart -->
+    <script src='https://unpkg.com/d3@3.5.16/d3.js'></script>
+    <script src='https://unpkg.com/moment@2.18.1/moment.js'></script>
+    <script  src="assets/doctor-dashboard/resources/js/chart.js"></script>
+
+      <!-- Data Table Js Start-->
+       <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+       <script src="dataTable/js/dataTables1.min.js"></script>
+       <script src="dataTable/js/dataTables2.min.js"></script>
+       <script src="dataTable/js/dataTables3.min.js"></script>
+       <script src="dataTable/js/dataTables4.min.js"></script>
+       <script src="dataTable/js/dataTable5.min.js"></script>
+       <script src="dataTable/js/dataTables.pdf1.min.js"></script>
+       <script src="dataTable/js/dataTables.pdf2.min.js"></script>
+       <script src="dataTable/js/dataTables.button1.min.js"></script>
+       <script src="dataTable/js/dataTable.print.js"></script>
+       <script src="dataTable/js/dataTables.colvis.min.js"></script>
+       <script src="dataTable/js/main.js"></script>
+       <!-- Data Table Js End-->
+    <script>
+        let user = document.querySelector('#user');
+        let userSettings = document.querySelector('.user_settings');
+       
+        user.onclick = function(){
+            userSettings.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
